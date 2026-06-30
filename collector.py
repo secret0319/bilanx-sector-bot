@@ -140,8 +140,18 @@ def get_top_movers(ticker: str, top_n: int = 3) -> list:
 # 3. 뉴스 수집 (종목별 + 정통매체 종합)
 # ─────────────────────────────────────────
 
-def fetch_news_rss(query: str, max_items: int = 5) -> list:
-    url = f"https://news.google.com/rss/search?q={requests.utils.quote(query)}+when:1d&hl=en-US&gl=US&ceid=US:en"
+def get_edition() -> str:
+    """현재 UTC 시각 기준으로 '오전판'/'오후판'을 판단.
+    오전 7시 KST = UTC 22:00 트리거, 오후 8시 KST = UTC 11:00 트리거.
+    두 트리거 사이의 중간 지점(UTC 16:30 = KST 새벽 1:30)을 기준으로 가른다."""
+    hour_utc = datetime.utcnow().hour
+    if 16 <= hour_utc < 22:
+        return "오후"
+    return "오전"
+
+
+def fetch_news_rss(query: str, max_items: int = 5, window: str = "when:1d") -> list:
+    url = f"https://news.google.com/rss/search?q={requests.utils.quote(query)}+{window}&hl=en-US&gl=US&ceid=US:en"
     try:
         res = requests.get(url, timeout=15)
         res.raise_for_status()
@@ -160,16 +170,16 @@ def fetch_news_rss(query: str, max_items: int = 5) -> list:
         return []
 
 
-def fetch_stock_news(stock_name: str) -> list:
+def fetch_stock_news(stock_name: str, window: str = "when:1d") -> list:
     """개별 종목명으로 뉴스 검색 (Top1건만 채택용 후보 풀)."""
-    return fetch_news_rss(f"{stock_name} stock", max_items=3)
+    return fetch_news_rss(f"{stock_name} stock", max_items=3, window=window)
 
 
-def fetch_trusted_sector_news(sector_query: str) -> list:
+def fetch_trusted_sector_news(sector_query: str, window: str = "when:1d") -> list:
     """정통매체로 한정해 그 섹터의 종합 뉴스를 검색."""
     site_filter = " OR ".join(f"site:{s}" for s in TRUSTED_SOURCES)
     query = f"({site_filter}) {sector_query}"
-    return fetch_news_rss(query, max_items=6)
+    return fetch_news_rss(query, max_items=6, window=window)
 
 
 # ─────────────────────────────────────────
@@ -279,17 +289,20 @@ def format_relative_time(pub_date_str: str) -> str:
 # 5. 섹터별 전체 수집 흐름
 # ─────────────────────────────────────────
 
-def collect_sector(name: str, ticker: str) -> dict:
+def collect_sector(name: str, ticker: str, edition: str) -> dict:
     pct = fetch_sector_change(ticker)
+
+    # 오전판: 최근 24시간(전날 장마감 이후 전체) / 오후판: 최근 13시간(오전 발행 이후 새 소식 위주)
+    window = "when:1d" if edition == "오전" else "when:13h"
 
     # (1) Top10 중 변동폭 큰 3종목 → 종목별 뉴스 후보 모으기
     movers = get_top_movers(ticker, top_n=3)
     stock_candidates = []
     for m in movers:
-        stock_candidates.extend(fetch_stock_news(m["name"]))
+        stock_candidates.extend(fetch_stock_news(m["name"], window=window))
 
     # (2) 정통매체 종합 뉴스 후보
-    trusted_candidates = fetch_trusted_sector_news(name)
+    trusted_candidates = fetch_trusted_sector_news(name, window=window)
 
     # 종목별 뉴스 3건 + 정통매체 종합 2건 → Gemini에게 각각 따로 요청해 비율 보장
     stock_news = summarize_candidates_with_gemini(name, stock_candidates, max_pick=3)
@@ -299,11 +312,11 @@ def collect_sector(name: str, ticker: str) -> dict:
     return {"change_percent": pct, "news": combined}
 
 
-def collect_all_sectors() -> dict:
+def collect_all_sectors(edition: str) -> dict:
     result = {}
     for name, ticker in SECTORS.items():
         try:
-            result[name] = collect_sector(name, ticker)
+            result[name] = collect_sector(name, ticker, edition)
         except Exception as e:
             print(f"[SECTOR-FAIL] {name}: {e}")
             result[name] = {"change_percent": 0, "news": []}
@@ -362,16 +375,21 @@ def main():
         print("=== 휴장일로 판단 — 발행 건너뜀 ===")
         return
 
-    print("=== 섹터 데이터 수집 시작 ===")
-    data = collect_all_sectors()
+    edition = get_edition()
+    print(f"=== {edition}판 — 섹터 데이터 수집 시작 ===")
+    data = collect_all_sectors(edition)
     save_data(data)
 
     today = datetime.now().strftime("%Y.%m.%d")
-    header = f"📊 <b>BILANX RESEARCH</b>\n오늘의 섹터별 트래픽 ({today})\n\n섹터를 누르면 관련 뉴스를 볼 수 있어요."
+    if edition == "오전":
+        sub_line = "전날 미국 장마감 기준 결과예요."
+    else:
+        sub_line = "오전 발행 이후 새로 나온 소식 위주예요."
+    header = f"📊 <b>BILANX RESEARCH</b>\n오늘의 섹터별 트래픽 — {edition}판 ({today})\n{sub_line}\n\n섹터를 누르면 관련 뉴스를 볼 수 있어요."
     keyboard = build_main_keyboard(data)
 
     send_telegram_message(header, keyboard)
-    print("=== 텔레그램 발행 완료 ===")
+    print(f"=== {edition}판 텔레그램 발행 완료 ===")
 
 
 if __name__ == "__main__":
