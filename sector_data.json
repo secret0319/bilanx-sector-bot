@@ -1,28 +1,32 @@
 {
-  "updated_at": "2026-06-30T06:29:24.609334",
+  "updated_at": "2026-06-30T06:53:00.814339",
   "sectors": {
     "정보기술": {
       "change_percent": 2.16,
       "news": [
         {
-          "title": "기술주 7개, 월스트리트 회전으로 2.3조 달러 하락",
+          "title": "[0] Magnificent Seven 주식, 월스트리트 기술주 로테이션으로 2.3조 달러 하락",
           "source": "Financial Times",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbUVyX2t2bEFsWDNOYUxxMUwydXMtMDMzd0t3Y0hlbUlyUWdqX2E5b1VOR0Y5dnVJZm11cFgwYzhDU0kyNzdic1MzM2NpQzE0TU0tOGZGMHlseWlQRWtzVE5pT2w2VTZjTjBaUnRqZ0pzQlE4YU92a2NBMVR5dVRTZGtLOVA?oc=5",
+          "time": "2시간 전"
         },
         {
-          "title": "기술주 상승 및 미-이란 긴장 완화로 미국 선물 상승",
-          "source": "Bloomberg.com",
-          "time": "오늘"
+          "title": "[1] 미국 주식 선물, 기술주 반등 및 이란 협상 주시하며 안정세",
+          "source": "Investing.com",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNX05iLXZQb2R5UkkwM0RqaUN4Vk0yQVFzY1FKTmVLV1R0NDNDbFA1T01rYmNEUVpodDAtSDcwRFBWejhzaU1BQW9TVG5Bb3ZLSkJEZmRjZDllbFozNnVQNTRIM05PYmlyNWlUVEtnRmNMeWNwV0dSTFVUWEp2NXU2RWNiM0QyUXVyOWVBcXpxakdsSkVyd1o0dlBhMGpmdGprcE1tbkJaTWZWREJ0enNTZW14MXlqQzZVVkE?oc=5",
+          "time": "3시간 전"
         },
         {
-          "title": "건전한 시장 회전 대 기술 거품 논쟁",
-          "source": "invesco.com",
-          "time": "오늘"
+          "title": "[2] 애널리스트, Penguin Solutions(PENG), Nvidia(NVDA) 등 주요 기술주에 대해 강세 전망",
+          "source": "The Globe and Mail",
+          "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNQnBEZFVNcERDbjhMQlF2WEQ4Wm5KVEt6VzhnWm1xUmRpalNCMXVXcldPUXVwaGtXN3QwWUFaZWMyQl91RFNfU1hHZlFnMnAzVG82WG5zeEFxRVFqNHlxczF5b0dfaHhCSEtwMm9pNGRUSl9JSk1XSGhnbDZfdm04Y01DaU1RYnJ6cFU3d0JlNFZoVkUwNjhRdUR5U2NPMmQ5eVZoT0thSV9meXRSWkZsRVJZaGpfVGQxTWp0QlRNMmh2ZDVZeG5wTW04WDczZkFXbWlYcXE3WUo0a21RZnBETUJhX3gyMHY2SGZyRjlsWllKVUZBNkpuVQ?oc=5",
+          "time": "5시간 전"
         },
         {
-          "title": "AI 상승세로 기술주가 월스트리트 상승 견인",
+          "title": "[4] AI 반등으로 주가 상승, 다우 지수 52,000 돌파",
           "source": "Moomoo",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWkF2WDk3dFIwRTNWNmVyWTlTUU1MeTJfTXZJdlRiUV9Xbm5LSTNBZkdiTW83a0JqZl9mMF9pRFlWbTdwWmNqdUh2UVdrWmh5U1dUQUhFVWFmcjZoaWthVjh4Q1J1VU9LTzNZblBPXzdndXBGMUx1cWJyX3ZUMkIyVWJWYi1vdTFRa0pfa2VUX2tKNVpQRmFmSU9XYUctTXM2?oc=5",
+          "time": "6시간 전"
         }
       ]
     },
@@ -30,24 +34,28 @@
       "change_percent": 0.17,
       "news": [
         {
-          "title": "미국 은행 주식, 연준 불확실성 속 저평가 상태",
-          "source": "simplywall.st",
-          "time": "오늘"
+          "title": "커먼웰스 은행(ASX:CBA) 및 ASX 금융 주식에 주목하는 이유",
+          "source": "Kalkine Media",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVW9JQ1Y3bm9UWFNlQlJNRlVWb3JONmtzYkk2YlQxam5OZVF5Tm9LdlFvYTRPZ0N0VzVZSTMxTDBYSmxKems2NFY5Z3dhMllwcHc3dHZGV2YzdGdkZ1ZieGZ2b3lTcUZMRmJfekRRbjhwR3B5aHhval93ellDQ1B6VEV5cHVNZVU1Y29iYVpwSk9YazJUN3J1bjY2T1JES2cwMGt3cjJnQzZNUUhBNHVYWA?oc=5",
+          "time": "3시간 전"
         },
         {
-          "title": "지역 은행 주식, 금리 불안감 해소되며 상승세",
+          "title": "연준 불확실성 고조 속 저평가된 미국 은행 주식 3곳",
+          "source": "simplywall.st",
+          "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNNkZwVW1YUGgxOWFqRHJLU1RDaDhTWWZycVl4dEpORWp4TnByZDE5V0pRSGZySWh1MURtX0pQaXpKZ2tNUWYxX0tqRWp3UlQyc3NUNE00dFBSeXhKaUo2UmI5ckh3Y3k2dFlPYUx6UVBEcFI3UUF5TEFsSW5tSndRa1ZYZW5jTGV2NV9DUERMVENyeW11a2NCRE1Nc1d6QTdfeXJjRS1qdnM5WDhyVlFFbUNVeXh3QWFwVkk0WFBDZXhmOTFoTlpja3hlcmRPdDR4cTFn0gHYAUFVX3lxTE5ZUEMzbFVhem01N24zc3lNMlBacVVCSkZoZ3NxbEhUOG44VnM5TnExR1ZsNW5ncXJ3b2JkYXlHdzVyNVBsQWNJM3NZRFUzbUFHWm9Ia1pTLVJQOVVWYkNBd0NTU0l3RWdxWjUtTHp0cmFMMDZWdERUaDhLMFYzTHVTOHk2VHRJMXRaWnJndnpKT3U3UXBDOFdTZ1dORFJmRTNhM2szNzU4RnVkSEdvYkxkQkZPUnh3VVRyd1Nla1oyQVBTdDFzNUlqdmJoeW5aSXZBVmtZbFAwQw?oc=5",
+          "time": "4시간 전"
+        },
+        {
+          "title": "연준 결정으로 코스탈 파이낸셜 등 미국 금융 주식 주목",
+          "source": "simplywall.st",
+          "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPWW55bXhJQ2ZwbTNHcF9iR0UyRGVfNlJkYndmY2tSN1pMWTFvYVQwZWhnUVh3bnNBVDFRNWVFX2Q3SE9HRldkdnV5UWxRblNWODEzbmg5QmRZakE5dkdhZXRVTldJc0lTMndFV1VOckxlT0RIdjc2bU1WcGhxNFZkMXpDd2ZTMzRlUG9UOW9ad2dNRDRBMkk0a1hvOUJhNUhBY0tnOURKQVRra2NScXdDdnVMYmVGQklCdldEVG9KUk9hQWpBcFNWNEJic3V5eUdNSXY4eU1nTdIB1wFBVV95cUxPWW55bXhJQ2ZwbTNHcF9iR0UyRGVfNlJkYndmY2tSN1pMWTFvYVQwZWhnUVh3bnNBVDFRNWVFX2Q3SE9HRldkdnV5UWxRblNWODEzbmg5QmRZakE5dkdhZXRVTldJc0lTMndFV1VOckxlT0RIdjc2bU1WcGhxNFZkMXpDd2ZTMzRlUG9UOW9ad2dNRDRBMkk0a1hvOUJhNUhBY0tnOURKQVRra2NScXdDdnVMYmVGQklCdldEVG9KUk9hQWpBcFNWNEJic3V5eUdNSXY4eU1nTQ?oc=5",
+          "time": "10시간 전"
+        },
+        {
+          "title": "금리 불안감 뒤로하고 투자자들이 금융 주식 끌어올려",
           "source": "Kalkine",
-          "time": "오늘"
-        },
-        {
-          "title": "연준 결정, 코스탈 파이낸셜 등 미국 금융 주식 주목",
-          "source": "simplywall.st",
-          "time": "오늘"
-        },
-        {
-          "title": "1분기 실적: 퍼스트 파이낸셜 은행 등 지역 은행 비교 분석",
-          "source": "TradingView",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSWV3aW1mUDRYV19aZTVibXp3bGx5WVNGWmpxTXR3WkNmcnNLMjI1WkNpaHpUaml3dXlqbVpPOEE1VUhvMHhfREYySHdya3BBRVZrc05ucXFnLVdmeHJHY04tTmtHR1dwaU9hMmk1bzU0SE16ZnM5N0hUMGo3SjB4SzZ2MGR6NjFaNDRqWFB1MWVuTFBHemlnaG5mZnptcFRKd2pKNnc1amU4WHc?oc=5",
+          "time": "21시간 전"
         }
       ]
     },
@@ -55,24 +63,28 @@
       "change_percent": 0.29,
       "news": [
         {
-          "title": "메인 파마, 헬스케어 주가 상승세 속 발판 마련 가능성은?",
+          "title": "[0] Mayne Pharma, 헬스케어 주식의 발판 마련 가능성은? - Kalkine (발행: 2026년 6월 30일)",
           "source": "Kalkine",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUWJqWGcyakxTcGJObnphN1FERXFlcWpuQ19LdkJRazZXWWM4YmotZnZ2U1JxR1dsTDNrMS1Lbl9NYUtQUVFCSFk2azhCck5RZ3RqVUQzN3FTN2hfQVd6b0o0ZjFNUEtBZnVQbW92WWs2ZFpGRk9HLS1BOFZXWTdHaS1iRzJfZUZibURhc01raW1FSkpMV29vYTN3REpzQXpSZkJmR1laQkQ0Y0FB?oc=5",
+          "time": "52분 전"
         },
         {
-          "title": "월요일 애프터마켓에서 주목받는 12개 헬스케어 주식",
-          "source": "Benzinga",
-          "time": "오늘"
+          "title": "[1] GLAND PHARMA 주가, 오늘 4% 상승 - Equitymaster (발행: 2026년 6월 30일)",
+          "source": "Equitymaster",
+          "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOSGkxUGcyRXlIaWltRkRjc1ZMa3I2cVprMUlNcS1UZGlVbTkwT0dFYjBDWmY5TWhLeGM0RzY2OUhEdEM0amkxSzlHaFJyNjIzSU45eVVmOUQweEV3N3ZTMUtURkVMYTVqeVhkRW9HR0ZXcWRiVDkzSEt2cURWMkROVEgtTWt1R1N2UmpFTVBsbGhfUDR3ckRWX1dZcHlXNWJKb0VZV2VmdF82cTBKZ3M1ZjJESXpfOVlXV0xlWk9GNXZjM0FCakdwUFgtWkx6U3VNQkhoeHRObXQtYmtpeTk3NnRhd0lmZmNOM3FndktmTC1KbTM1N2RGMHBVSU93bHlfTkViYzVXZGtjTEpYMFF5RmFRaUZuS1I1aGZxcG9KRDVrdw?oc=5",
+          "time": "1시간 전"
         },
         {
-          "title": "중국 바이오 제약 주식, AI보다 헬스케어 선호하며 급등",
-          "source": "marketscreener.com",
-          "time": "오늘"
-        },
-        {
-          "title": "저부채 소형 제약주, 병원 부문 진출로 13% 급등",
+          "title": "[2] 저부채 다중배거 소형 제약주, 전략적 인수를 통해 빠르게 성장하는 병원 부문 진출로 13% 급등 - Dalal Street Investment Journal (발행: 2026년 6월 30일)",
           "source": "Dalal Street Investment Journal",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOT0U0YWpOa1VyN2xzdldzYkh5aXA2eG01UGFrNjFFenJUZEpQcG93ZEJKUF95Nk4yeFk1TVo2UFZVbVJvbjM3YnVITnVsTU5tRENhRmdlUFdNd2ZYZDBjakh4RGxORDRsVURHRFoyOERmQlo0bDhWTUZ6YjVMWWZqcVBTUmp0aEpiMkF1d0t0VFRDRF9Zb2lLMU9SaHYyQmVHbFBjRmhiMHFaVmJYUE9NejB3SGZ1aEVqYUxoZVNBcjR4OWUySXlMTW8tNDRJVjh5a0pES08ycFlqaWhVVVhuZUFLTUZ6eW5FSXVqanl6UjV6ejJFMXlOOE4wbU9Ta3lrLW1mUmtJQWNEaDJlSzM0T0tNbDZ1QVk?oc=5",
+          "time": "1시간 전"
+        },
+        {
+          "title": "[3] Jagsonpal Pharma, 인수 업데이트에 14% 급등; 이익 실현 시점인가? - Business Standard (발행: 2026년 6월 30일)",
+          "source": "Business Standard",
+          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVlJQcGRFTUp0NHpfdlpZSl9mNDc4cnBxUkRsWVplb3ZCeXRfbTdaNVFRRWU5S2NUZWxMTzJFZVFfOVAyNEFOdkFtLXU2dmZJdDZZWUstaFNRQlNHaUZ4X0ZsNHpNWXZfWkNsd0liV1BsYk44UEd3aWFwZ3NpR0EtSnVzOG9wRzNxOXhJMUlTWUxwTDFicWlMOVI3cGV4Z2xVb3VraEJFbVcxUTJvcE03TDNSV19aSzU2c09FR3N6eENPdWJfbzBlbDVRX0pmcFI2Nm9iMmNiV1hoZ9IB3wFBVV95cUxNbE1KVVZIYzEzTzlPNFF0SmxBQXV3SVE2bHcySlk0UVYweUVPQUFSaFNmb2xydlUtdE1hTGU5aWNIdHowLV85eUpxYkVGVVN5UVNTcnlJVDZkUnkxb2xLeTZJd2QwRGl6LVl3Nmd0NHp5UVN5N2JGdWZhQ0JjSHFxUG9pTE51MU9rV0w2LVNwMHlUMWZSNkRuQ3M4REhvdUszVG05U0Vac1RNWXZWZ1k2VmdaY09ENTVudnZXMnl3VTlTU2FmMS1fM2pyR016T3V6eFlIM3BqVGlsOG11TnZZ?oc=5",
+          "time": "1시간 전"
         }
       ]
     },
@@ -80,24 +92,28 @@
       "change_percent": 2.4,
       "news": [
         {
-          "title": "AI와 할인, 소매주를 포기하지 않는 이유",
+          "title": "타겟(TGT), 재량 소비 수요 약화 속 주목",
+          "source": "Kalkine Media",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcEFjS05NSTFPUklXVFZIdnI4R2pWcUtuck82Ym9LMVlOUUxnU2JjRXRVZ01jaFZCcWNMQnR2cGZXTEs4MHlrMW45LVhzUGFjSFR0N3ZhZWJoUXN1R1pLd3IwVEhTLXdwN0ZDTkJMdDYzR1BEMlpCRllNek1PZ01yVXVjMWQ4b1JoRGpKYXZpX0gyeG5kdnE3bFViQjY?oc=5",
+          "time": "9시간 전"
+        },
+        {
+          "title": "AI부터 할인까지, 소매주 포기할 이유 없는 이유",
           "source": "Barron's",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQzc5WGNvR1dOblpRbXhWdWxZT3VoZVBCZ25MdXBKa21CTFlBQkpabUVfSEdfOXdFOU5zSzRrZmhEdjlYT1JXTDJyUG4zZjdfWUU0VWlkLXFYenBTa1dNZF9VOGV2bDZjV3U0U2ZNN0tVdDZ0LTlCeXU0MFJfYTBjekVEaw?oc=5",
+          "time": "12시간 전"
         },
         {
-          "title": "언더아머, 스포츠웨어 섹터 압박 속 항해",
-          "source": "Kalkine Media",
-          "time": "오늘"
+          "title": "섹터 업데이트: 월요일 오후 소비자 주식 혼조세",
+          "source": "富途牛牛",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPOWdQUklVTVZORHRpUFFvdndGdXV1YWMtdWI3aTBNd01rVEFWRk9jbmJrQzV6em5YX0kyd0NlVjNhdGJSYVlKYXc5MVpGZnFXVWd2VGNETGpPbFVUVU1kek9JX1FIb01uS0xpME0yNDYwdW95Y0JqTEx6TDVrcWFUUzJXemFacVBFUUNnbXI4N2lrUkJjS0xmTw?oc=5",
+          "time": "13시간 전"
         },
         {
-          "title": "타겟, 재량 소비 수요 흔들림 속 주목",
-          "source": "Kalkine Media",
-          "time": "오늘"
-        },
-        {
-          "title": "오토스포츠 그룹, 자동차 소매주 관심 증가에 상승",
-          "source": "Kalkine",
-          "time": "오늘"
+          "title": "월마트, 미국 소매업종 대비 속 나스닥 주가 안정",
+          "source": "AD HOC NEWS",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZ0dwbkJ2Z2xYd0duelVHMHJqRVd2VE5XaENrNmlEQnlIZTBkeGZuVGotYzNCZGprd0ZDTDV2OW93dkFTN3MtQUNDR2hhclVvWW1FNG5CdU50Z3FSeDc3WDZVZ3h2Z19rLTJOa1ZQR3FIZkNjanZaN2VUbGYtVnp5U1BGY21YOExCdmtOcng5SjFEUzNSRVB3aktZcEpMSGcyV2ZQR1B4RTN6bWJBVnhTSUZna3dPdS13ajZHSC1obzc5SUJ6?oc=5",
+          "time": "18시간 전"
         }
       ]
     },
@@ -105,24 +121,28 @@
       "change_percent": -0.57,
       "news": [
         {
-          "title": "배당 수익과 방어적 안전성을 위한 저평가 필수소비재 주식 3가지",
-          "source": "Yahoo Finance",
-          "time": "오늘"
+          "title": "[0] Monster Beverage, Coca-Cola, S&P 500 필수소비재 성장률 선두 (발행: 2026년 6월 30일)",
+          "source": "MSN",
+          "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNWHpjMmQ0ZGR3UUVLWjdEZ21OT1JEc0JsSWRTVnJwQ2diQXNnN0VXSVRnRzRpTHVwOTZRanBZcW5DbWxzendtMnlFWjJRS1h2VVlHeWpybTIycE5YZkR4ZkJWbHNtaDBETGFrSVlhVzJ1UnN3Mi1jTHVVMDB6N0dBMlJuMWZaQWE2LTJFY1pjVmtwMVh1Y25pMkFHRHo5a0tCNjZZd1dmY29xek05SG5QTmh2eGN5SDI2M1RMRnRCNk5sZlNaUThMemIzNF9IcGkwMzVDSlVUejl2VVNmTHhreGlmM2JtU3pkNHJTUmJoM1Q4VUhQMEdIWU5rYXF3Zw?oc=5",
+          "time": "1시간 전"
         },
         {
-          "title": "인플레이션 저항력 있는 주식 3가지, 연말까지 상승세 지속 전망",
-          "source": "The Motley Fool",
-          "time": "오늘"
-        },
-        {
-          "title": "필수소비재 섹터 SPDR (XLP) 주요 전환점 보고",
-          "source": "GuruFocus",
-          "time": "오늘"
-        },
-        {
-          "title": "필수소비재 성장세 회복에 Cobram Estate (ASX:CBO) 주가 상승",
+          "title": "[1] Cobram Estate, 필수소비재 성장세 회복에 상승 (발행: 2026년 6월 30일)",
           "source": "Kalkine",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNVZxME5INk11TXdwTmN2YWFxandqa2tQNHllYmV6YmZqWWRobE5NYTRuTndxbjEtMnM4MEUyb2pOUkZxWTVwZzJPX1VGSTlpSW10NjFXQ3JkR3pqM2FfWW9JemFFTldFUUJlRDluNElyd1lNQkFTNmVWZkdrWEgwaWxSeTdCdDlBNlk1UmhKNHlmM21mRmFlc2hKR1YxdTlnYVJGRkRxSzBDVzBVOGpzcE56dw?oc=5",
+          "time": "2시간 전"
+        },
+        {
+          "title": "[2] 배당 수익과 방어적 안전성을 위한 저평가 필수소비재 주식 3가지 (발행: 2026년 6월 29일)",
+          "source": "Yahoo Finance",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRFRLOVNDQzVDMGlpLUlxMnF0c1hJV3RHaGFiMGhuWTZKc282dDJwVEJ4dGwtT3dBVVl0Rmk5WHNCclNsbzRfOG1ZSG02WGxqYWMweXVmT0JkWktSS0xKOFplZ0dYZk5YRGRsRzBRblZrdi05RDlvR29wb3lhOXQ1V1pmUDFWY1dLOE5RRDVVMF8zYW1od1RaME8tcjZ3QmJjdWhqWg?oc=5",
+          "time": "9시간 전"
+        },
+        {
+          "title": "[5] 연말까지 계속 상승할 인플레이션 저항 주식 3가지 (발행: 2026년 6월 29일)",
+          "source": "The Motley Fool",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNYVNJcXpldnNpSEhObTU0T2ZDb05YMTBSN2pRTkJTYXc3S1ozX01yZDFyQ3YyblRKS3RJNW4yUFNqdnVkWXhjWE03NWlKTEFlb3g4Yzl4QmNDOElhZ0k2cHg3dTdoOWN0aEItLW9XMm44QmxOUExoejlMU0Fsd0Y2MmN1cFIzOXBXbXBjVHQxeDc?oc=5",
+          "time": "11시간 전"
         }
       ]
     },
@@ -130,24 +150,28 @@
       "change_percent": 0.59,
       "news": [
         {
-          "title": "AI 인프라 구축 수혜주 2선 공개 (SpaceX, Intel 제외)",
+          "title": "[01:47] 스페이스X나 인텔이 아닌, AI 인프라 구축으로 수혜를 볼 숨겨진 산업재 주식 2가지 - The Globe and Mail",
+          "source": "The Globe and Mail",
+          "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNb0lGVG14TGMtYWdsRXhsZmJvdS12TkxaVnhLc2tOZUNSZjUtQTZGcWdSdUNHUlVRcDJfQ1lmWTNmLUg1ZlBCaDA1RGdhZVp2VUNjcEotejVSY1NMZ0dMeHMwMnRVNURyZXc3NGQxMVlRSTVwNVN6TnFtYU5UdjN3RTVTaHhxWFdqbFc4by1uaFVYbUJTNmZ0SzE5M3dVSW1Eczl6dG5xcFgwTXkwMGJNY004TFExU3VocHVYN1NUQWZKYW5yR09fMTRXc3JKUWk2ZW9aeFY2TGlwa2JOSG4wYjN6RVVoRjFGN0QyUEdjNzBYdkhBVHA5SncwQ1RxTENLQk1OVVpKcXdUUUJWN05jOWNfTFA?oc=5",
+          "time": "5시간 전"
+        },
+        {
+          "title": "[01:14] 스페이스X나 인텔이 아닌, AI 인프라 구축으로 수혜를 볼 숨겨진 산업재 주식 2가지 - The Motley Fool",
           "source": "The Motley Fool",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOalVZai1fMVowTWJqUTRsbjhXRE5fQk1lRVBFVkdDYUk3dEVmMG9uSlhsZzZ0Z2RwLW5nMDFCa0xISVhfMUg5NUs2bjBkbTN4UWRXZElGNk1HdVlHSjhIQUNFU3R4UjJuU1dWa09yZkE1eHAzTFJySXNVcVUwTzhiNFVJS3k1TDRHMFUxMkdFNFNOVk0yU1hn?oc=5",
+          "time": "5시간 전"
         },
         {
-          "title": "지금 이 산업주를 사면 평생 부자가 될 수 있다",
+          "title": "[23:05] 예측: 오늘 이 산업재 주식을 사면 평생을 준비할 수 있습니다 - The Motley Fool",
+          "source": "The Motley Fool",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSk1JMVdPMmphalZ3b1U1aUFmVW1nSVNZNE9iUFpYMWpKS2pPSWlYd3pJODdScUVuNjIwOWxkYjFRSEgwZUwxWGNDbXI0S0cwUHo5aFAtMEozc0xwVThxTldrQ0ttclVzM0RhY3l5d1pOTXZQM2dTVWtzQy1aSUpXSU9xMk5xVmc1OENmWWNZT1hCQVJieEZfeQ?oc=5",
+          "time": "7시간 전"
+        },
+        {
+          "title": "[22:25] 예측: 오늘 이 산업재 주식을 사면 평생을 준비할 수 있습니다 - Yahoo Finance",
           "source": "Yahoo Finance",
-          "time": "오늘"
-        },
-        {
-          "title": "미국 증시 마감: 다우존스 산업평균지수 0.59% 상승",
-          "source": "Investing.com",
-          "time": "오늘"
-        },
-        {
-          "title": "무역 긴장 고조 속 중국 노출 적은 유럽 산업주",
-          "source": "simplywall.st",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdnJIalFURVdBLVhXVURqalM5NjdtclpTb0VPWm1WREswcTZoTzgtdDBfNmNJbWxYYUxUN19ycTZyOEFNSVlucWNUR29valpTeEhGdTNlTVR0Qk82NGJIbGNtZENHYkZwVjFvdjM5NHNaR0FCT1hDei1LdW1NN2lVY1FUZnFYOXF2Ti00RVUxSmhOa2ZtUHQyRlpTUGVkY3lJN3kyUTBzQ0U?oc=5",
+          "time": "8시간 전"
         }
       ]
     },
@@ -155,24 +179,28 @@
       "change_percent": -2.11,
       "news": [
         {
-          "title": "MP Materials 주식 매수/매도 이유 2가지와 1가지",
-          "source": "The Motley Fool",
-          "time": "오늘"
-        },
-        {
-          "title": "심해 채굴 붐, 소규모 국가들을 값비싼 법적 분쟁에 얽어매다",
-          "source": "AZoM",
-          "time": "오늘"
-        },
-        {
-          "title": "견고한 재무 상태와 명확한 채굴 촉매제를 가진 페니 주식 3개",
+          "title": "[0] 견고한 재무 상태와 명확한 채굴 촉매제를 갖춘 3개 페니 주식",
           "source": "simplywall.st",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTkFPZFVzeHo5eE54dlBCVXJuMk9rLURWT2FSOUFRdG9rN0toUEhMcnBsTDNLZFo2ZjBWSXBkdkVhVUdGdVZvWkxSWVEtT0NtNWp3WmJLc21yUUFDQXRET01MeG9RXzZVSmI2SFhGTjdWdUE4OVhSNUljME9fQnk2VmdQcGQ3d1hWNFN6c3g5T21mcjdlc1dPa1dMclVESm1pMW9tdFFvUFhwQTExV1I3ZnEyZGxxOUJlcC1tMzJ5cUQycFRud3V1Q0k5bXDSAdIBQVVfeXFMUDlhQlB6SmV1TTdDUW9OZTJ1R1ludjdpRkhYZWlKUi1NdGxUS21EUkUzSGJ0OTY1Q3BCRGhJa0U5aEYzazlPakdOT0J2VzR6TWpQZHVLOERpMnVQY0c4d21jZnhyOFAwRG02dTI1RWs4QUVWYXd4V2RhR185eEJTbzlnd19YVUZQYXZGR3I2WlNHZnJlSnBOcE80NXNmSW1yenBfcUdUdEZ2YTdfangtQzFucHFhNm5QUFRCcHVPVjlRZHhnRXBTZTJEeEMtWlllbHZ3?oc=5",
+          "time": "24분 전"
         },
         {
-          "title": "Euclid의 REalloys, 군사 기지 광물 플랜트 건설 계약 업체 중 하나",
-          "source": "Crain's Cleveland",
-          "time": "오늘"
+          "title": "[2] ASX 정오 섹터 업데이트: 유틸리티가 주도하는 가운데 소재 주식 후퇴",
+          "source": "Kalkine Media",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQTB4NzBIRDQ0QnFNbWNzVE9uYjhVZDNIbHQ4YjdibEE5MHJycVotMHRBb09haUVLY2ROc0NBb2p0N2Rmb1ZJTGRGdXBtUDB1XzdrVmo4ZTRNZS16VXM4RnRwcmpyV1cyY3RrN2RhRkg2N3ZJMGd2OU05UXJ6cmxxQUEyOEp2OGN2ZWZTSjlkd3VjTUpoYXJkblk1Q0p2dVNtanNKYVZWVHBtZTBLeWJMeTl1eGJmTTRCcmc?oc=5",
+          "time": "3시간 전"
+        },
+        {
+          "title": "[3] 심해 채굴 붐이 소규모 국가를 값비싼 법적 분쟁에 가둘 수 있다",
+          "source": "AZoM",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE45RWctenZWUGdfUV95bFRqajQ5ZlZ0ZENvR1lRblRKelF5X1dyWWd4TjlOci05cTc0elhVdkhXN3ZJSENXMWZzY3JPTU12UmNPQzRjVFNn?oc=5",
+          "time": "5시간 전"
+        },
+        {
+          "title": "[6] MP Materials 주식을 매수해야 하는 2가지 이유와 매도해야 하는 1가지 이유",
+          "source": "Yahoo Finance",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOc3JmME5GRFVmcjVBcmYxME54OU5nSU1qcEJLNXRzamxQU1hLQ01CeG9sM3B5eWJKRVBhOXZnYlBYY0FDam5CUDl1M2NtVmFpeDkxM0RGRjNIRjlHelZTNkRsR1UxRWNSSkRNSGcxbnpXTVZMUFpQaFV0cVVRS0RfWEcxVVhlNXV6NHhmX2RmeXRzNzRVSEE?oc=5",
+          "time": "12시간 전"
         }
       ]
     },
@@ -180,24 +208,28 @@
       "change_percent": -1.29,
       "news": [
         {
-          "title": "유가 상승 노출 에너지 주식, 개인 투자자 주목",
+          "title": "[0] 유가 상승 노출 에너지 주식, 개인 투자자 주목할 만",
           "source": "simplywall.st",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNVktpaHhQTnZCdk5wWXJZajlPTG41S2lmYXdQc0doRDc1YWhxN0dmVGwyZ1RiWjZXXzk3Wk5sUWdHa2VWMXE5bjJibXhjZG9fZHhhWUxRQ1NIUDBFU2NyMDF6a2M1ck9sRlBMc1VtU2o5aUd2dUF6b2xmWlJEZ1BCS196SDhvLUo5dy0yQkl6VURpa0szdXpkVnBRVnRaOW0xTEp4d1pIUGs5N3ZVUkJBWmJIMklILXpTLWVSTGVES0tKQzZqSHl4QUY4VHZ2S2Jk0gHWAUFVX3lxTE0xUGhLVXUwS09lTVRGaDBhOFVINWdwX1I0VHdWTmY5X3JlbkFmQWMybElaR2FPTHhJNGp6YzdfNHhSNngxMHNMQzRGUHQ2M19FczhkY3pVaHVkdEk2RnR0UXpVNkItNF9oZk5OR2duYlNuTnI3ZmtYNmI2UW1XNlN3eDRWanBCRU96T2tDb1NwdTkzcnZrU29CVmdVMGpraV9hZFg2SHZsS3hDUC1kQVhFMXlBWU44RjVCNkNRUXpvVks0RHZYLUdZeTkwNEtReVNKWGltR1E?oc=5",
+          "time": "5시간 전"
         },
         {
-          "title": "주목할 만한 에너지 주식 1개와 부진한 주식 2개",
-          "source": "StockStory",
-          "time": "오늘"
+          "title": "[1] IEA, 추가 석유 비축분 방출 논의 중",
+          "source": "EnergyNow",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSFIybFdCMkJPNUZhMkhMSGQ4S2ZTQjJQUEpRcFNmcV9fcXVSQ2t3UXFoOVlseFlYanBoMlBPOHcyNzE0Wl9kVzFMcHV3RUlBUnQ5cElXOUt0dU1CZVZTNHhsT1o0Zl9CeFNpLWpFUFBub3B5MFpYX0VpYXRZWGpNUUd0blZlUjBEVmZtQy1KeTE?oc=5",
+          "time": "9시간 전"
         },
         {
-          "title": "퍼미안 지역에 AI 도입, 가스 주식 2개와 파이프라인 1개 고려",
-          "source": "Barron's",
-          "time": "오늘"
+          "title": "[2] 이란 휴전 후 유가 하락에 따른 엑손모빌(XOM) 주가 주목",
+          "source": "Kalkine Media",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcjJweDFUaDFyVWlXY2JUTXd1RGhnTFkzS05ZYlhIcnVNZS1VNHlSVTdSN0ZRN2pad0gwLWJ2bENxODRfblk4cDRwLVoxSWs3SkhNdFhfTnQ4S0ppY1ZMZW5yRFJQNlo4d1pXOVk3eUFXYWd5WXh3ZnJ6QkkydVpOUko3WVFGOFZFQTNial9jb1pNY2FEQXdPWHBnM2M2cVlzbzJ1dFB1NXlDdG9IMExzQkhjcEhpZw?oc=5",
+          "time": "10시간 전"
         },
         {
-          "title": "유가 하락에 따른 에너지 ETF 매수",
+          "title": "[3] 유가, 이란 전쟁 이전 수준으로 하락함에 따라 매수할 에너지 ETF",
           "source": "TradingView",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPaGNQTmx0RWNaNnBMckE3Qlp3Zzh1YmV4Zi1wM2xjVzhBZXhvaTM5SC1VNVJmdWh0My1Yb3pNSkdEV2d2dVhYcVU4WmVpTEwzenZ0NVVXcHZYRy1hUlZXQldCWUNsZnF4RlFfRVlmZDBhX3U2VmttOHZVN2M2cEwtNDdiUkFHUzFzYmpXS0Z6TVFfbXdEUmhhMGlpY012b2NBdFk4QVNKOWJfdVJQeko1RG5GY3NyZzg?oc=5",
+          "time": "13시간 전"
         }
       ]
     },
@@ -205,24 +237,28 @@
       "change_percent": -0.17,
       "news": [
         {
-          "title": "유럽 유틸리티, 2분기 모멘텀 잃었지만 새로운 매수 기회 등장",
-          "source": "Morningstar",
-          "time": "오늘"
+          "title": "[0] 유틸리티 주식 상승, 원자재 섹터 하락 - ASX 미드데이 섹터 업데이트",
+          "source": "marketscreener.com",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQm1BcFFESzY1RUIzS0lLYWFkb1NyQVJKMXdOMzlXUjJiZC0ya2lualpOX0E0bmJoZmt4RWxNQWstZTNBWkxsOERsRVpWeDE4MmlmUFM2U05yZ0pxc2dLb0hPektud0NXakQzVjhvRlZKTEQ0SFBWUGkwaHZBVW5TTXFoV0thYlQxbXBrM3FNTjN1NVJNNXUtWm0yRVcxb18zdG1lNy1uV181QUEtNEFyNGRaZVMzQmtFVzFHNEp2Zw?oc=5",
+          "time": "4시간 전"
         },
         {
-          "title": "AI 전력 수요: 데이터센터 확장에 따른 유틸리티 기업의 수익 증대",
-          "source": "Seeking Alpha",
-          "time": "오늘"
-        },
-        {
-          "title": "애트모스 에너지 주식 및 고금리 시대에 적합한 유틸리티 배당주 2가지",
+          "title": "[1] 높은 금리 시대, 애트모스 에너지 주식 및 유틸리티 배당주 2개 추천",
           "source": "simplywall.st",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNaDNsdDluMDNwZjVNaE8wRi02OUVpVnl4VVV5dWRieDdiYndwZmxhVHBqSmNjM0hTTXVLT1NyaXZCbDZPbmRaa0hoM2RDclFnRUNORTYyd0Fjc2h3aFhTanFmcGlKSUN4VngxWmxOc01fSUVXbUhiMnY4ZVFTTXN4Zjh4T09HckpuRlc0NXFNODcxekhNVF9VZnQ2dmtGOVlwTkRXLTJZcndMU0RjS09JTjZPRmlBSGs3WTJ3T1cyYkp3dTIxS2ZCMNIBzgFBVV95cUxQVTVKN1Jha3BuS2E0MV9OYm1CWjJ6VU82SG1EbUxoQ29OX1RIQklWZ2dNNzZpMzdCLS1reVQ4RkpiUUZhckRiWnhDRHE4cVpreFdRMWlucmN0bjlJWDdXbk9BVlYzVzlxQTdWbHBOcE91NGdUcDZkRVlyNzk3UkdMTTJzUEV5V1MzclFWMWNPWUkzUm1jVzd2MVVPalQ4aHlGMHdSdjZmdDhiTl9zdVZ3TUx0b2FCa0oyYzZpLU5NcEtYcVZHRlVPUGs0RXdvZw?oc=5",
+          "time": "8시간 전"
         },
         {
-          "title": "유틸리티 주식 시장 부진에도 모건 스탠리는 퍼스트에너지(FE) 선호",
-          "source": "Yahoo Finance",
-          "time": "오늘"
+          "title": "[3] 유럽 유틸리티 2분기 모멘텀 잃었으나 새로운 매수 기회 등장",
+          "source": "Morningstar",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSTR6eVdjYnNUN0ZxS1pfR1N4b09TeVhDeDBPWFJXS1h6TWo0RExhbHVmM0VEYlVjQVh1Q3NFUVFEeE01YTBfNThDWVBMTzVKM1lnOEhybzFTak1KRElNaS0ydVg4cXJmQmViaV8zeGpYZk0wNnJDeG13c3NxVll1TktydGtTdm1rU21GeA?oc=5",
+          "time": "10시간 전"
+        },
+        {
+          "title": "[4] AI 전력 수요 증가에 따른 데이터센터 확장으로 유틸리티 기업 수익 증대 (AEP:NASDAQ)",
+          "source": "Seeking Alpha",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQS3VwMHI0U1JZeFozUTY3MjczYUdnbHBfUjlkZTBPQ20zaXlEZVU1a1NveXFMT2NoX0xNT3FDYVR4cWFMR0ZQdVdUU3NIY3JGNW83WENBXzZockpzbE1WTi1KZWRtVjloSHFSODVqaXhjLTJPanUxeWJ2RnNUYlkyMXFKUGUxTFZmeXZYVXZoSERSajJjeG1Kc0VKQnZHRUk4?oc=5",
+          "time": "12시간 전"
         }
       ]
     },
@@ -230,24 +266,28 @@
       "change_percent": -1.21,
       "news": [
         {
-          "title": "리츠 ETF를 통한 부동산 투자, 간편하게",
-          "source": "Think And Retire",
-          "time": "오늘"
+          "title": "REIT ETF를 통한 부동산 투자, 간편하게 시작하기",
+          "source": "Mshale",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE12VTUtZkJrUTREa0hyWkFfYWkyM1RybjBETmU3ZXNxNUFsWDBrZ0x5SVJ6SWdkVExzNmRGenVWQk9qaUFQMHNzaUZDeGQyaHVlZkpVUHpZTnV2ckE?oc=5",
+          "time": "2시간 전"
         },
         {
-          "title": "사이먼 프로퍼티 그룹, 사상 최고가 경신: 리츠 주가 랠리 배경은?",
-          "source": "Seeking Alpha",
-          "time": "오늘"
+          "title": "글로벌 부동산 ETF 비교: Vanguard VNQI vs iShares REET",
+          "source": "The Motley Fool",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbURfRS1yREZKQWJ3anZzUnlmX0VoWGZMX3RjTEVDemg3N3dqZWwweWtYdGk1SXhIdlBrYjhCbkZzejdLSnVLZXFvQkppMzNuTkx1R25NamUwTGJlb1ZXQlEyQWY5VW41UnhZcGpQWC1qNU4waVZnX3dxem5hOTROOVR0MC0zWFVPLUs2Q2VNYzRLV1ZIS2Jrck5fSzF4Y2hSUjJIV2RiOHBtelBZdWZTYWlzd3JPLURvQ0ZCSEtwMVVNdE0?oc=5",
+          "time": "10시간 전"
         },
         {
-          "title": "기술주에서 부동산주로의 전환, 부동산 주가 상승",
+          "title": "기술주에서 벗어나는 흐름에 부동산 주식 상승",
           "source": "MSN",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQ1k3YVh4Z1NWSld1Ylo5X0laMDl0cWlnT1NJcjhMWkVzcGxfWkxrNkJRajVFcUx2Q3RGVmFSUXRPd2RyQnlqNk9yc1hlN190TVptX1BSaDBXZFRfTFNLS19kTG9zYTdhdmJiTWNuSVpKb001RjVGaXNiTnZ3N3R0Mnd6MmdXazVtYXBNZWhLS3NOZlg0QWpQVmZwV1VoQjktYVU5d2ZETWFRdkNRbEE?oc=5",
+          "time": "15시간 전"
         },
         {
-          "title": "5.4% 수익률과 안정적인 월 지급을 제공하는 TFSA 주식",
-          "source": "The Motley Fool Canada",
-          "time": "오늘"
+          "title": "Simon Property Group, 사상 최고가 $228 기록: REIT 주식 랠리의 배경은?",
+          "source": "Seeking Alpha",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQNUlNbzZ0SHhqLTh5Yzc2UnZCWEtqXzgxT2k4WGNBWnNHVC12M1lZaWdobHVENGUyYkJEWGpZLUpVVEdmWndOSkVMM3RoeTVOazB1MlBUNTM4bDlLVTF2QXNVdEE4SVpDYnpOU3YwUDBRY2NJZ0diUkFZWU9RMkpEbkFtNTJCUWR3c25hVGV2NUx1eHJ5NWUxRF9XTHplZWs4OGZMY3pDQ2h4SzBSb0FlOA?oc=5",
+          "time": "12시간 전"
         }
       ]
     },
@@ -255,24 +295,28 @@
       "change_percent": 1.61,
       "news": [
         {
-          "title": "알파벳, 다우존스 지수 편입...버라이즌 대체",
-          "source": "qz.com",
-          "time": "오늘"
-        },
-        {
-          "title": "커뮤니케이션 서비스 섹터, M&A 활동 속 상승",
+          "title": "[0] 커뮤니케이션 서비스 섹터, 거래 활동 속 상승세 - marketscreener.com (2026년 6월 29일 21:19:26 GMT)",
           "source": "marketscreener.com",
-          "time": "오늘"
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOZVhpRFNTUjlrRXNRY01vWnVpVDdWTWpGbGNXSGM4OE9CVFlneWVISVFXT1dOcURsRW50N1E2Y0JsMmVJbGVLTEFabmRjZTQ2eWlZR0x3V0RmOVd5THNQQ3BPM0ViVl9wWlRwUDhyS18tYUN6N2JJRWZwcW1hSUU2TWJIQ1dCVjJVWWVFZ3A5X3o2akR5TURjeEpzc1ZsakhJMlZWU0JyWFFzNFY0TEl5M3diR1A2VUpmZGg4VmlsZWtBT1RzX3EyalJR?oc=5",
+          "time": "9시간 전"
         },
         {
-          "title": "메타 주가 상승 요인은?",
-          "source": "Trefis",
-          "time": "오늘"
+          "title": "[1] 알파벳, 다우존스 산업평균지수 편입... 버라이즌 대체 - qz.com (2026년 6월 29일 21:18:56 GMT)",
+          "source": "qz.com",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE05QlF3a0dmMDE3Y0JWdF9EbXgzeUxPMGM0dGxnRzFiZkgwUmdTZnl2UnNrRVpTbmZLSmYwWGhiUDFGQWRENXNEZU9zd0Nwb3NRU252NUs1NWlQTWNTMnZLcnd3UEU2QlJuelIwb01kQ3I1WEFFcDhOTGtmcC14UQ?oc=5",
+          "time": "9시간 전"
         },
         {
-          "title": "T-모바일 US 주가 3.99% 하락",
-          "source": "TradingKey",
-          "time": "오늘"
+          "title": "[4] 구글 모회사 알파벳, 다우존스 지수 편입 (2026년 6월 29일) - MediaPost (2026년 6월 29일 19:45:00 GMT)",
+          "source": "MediaPost",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxON2JhVlBZYUN2YW5lTGNuRjVyMnl4V0kyZmFUTndtVjl2cjhyMHpiSjdoTDdsdkMzd29hOHBqU1IxeDVSVzl4LTU2Wl9tTnVqYXczcVBRakljRkk3bm9jMm9ybVV0djRBRDVUbFpsTmtaU0JKYS1hcjJaQ2FGYlV4bWY5MXcwY190SndVQnNzcDMzaHVlRXVueUYzYw?oc=5",
+          "time": "11시간 전"
+        },
+        {
+          "title": "[7] 스타링크 모바일 위협에 버라이즌, AT&T, T-모바일 주가 하락 - Barron's (2026년 6월 29일 18:02:00 GMT)",
+          "source": "Barron's",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNX3prei1XZWtWTG5BVWg2eVY2N0w3aU02VEhJcWdOVmpkYzRLODRFaFdmSE1vUlNmdV9NZDVaLWJxM0NyczFJZUhYdzRJUVhpZlh3YlRXQ2VzblA1SE5HWE4xTXJGWVdXSmpEYjdET2ZMSDNzUHJhX2R6MW5kX0ljYg?oc=5",
+          "time": "12시간 전"
         }
       ]
     }
