@@ -1,7 +1,7 @@
 """
-BILANX 섹터 트래픽 봇 (v3)
+BILANX 섹터 트래픽 봇 (v4)
 GICS 11개 섹터 ETF(SPDR Select Sector)의 등락률을 yfinance로 안정적으로 가져오고,
-관련 뉴스는 Google News RSS로 가져와 Gemini가 한국어로 요약한다.
+관련 뉴스는 Google News RSS로 가져와 Gemini가 한국어로 요약 + 원문 링크를 함께 보존한다.
 """
 
 import os
@@ -19,7 +19,6 @@ TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 
 # ── GICS 11개 섹터 ↔ SPDR Select Sector ETF 티커 ──
-# State Street가 운용하는 공식 GICS 섹터 추종 ETF
 SECTORS = {
     "정보기술":          {"ticker": "XLK",  "query": "technology stocks"},
     "금융":              {"ticker": "XLF",  "query": "financial stocks bank"},
@@ -35,7 +34,6 @@ SECTORS = {
 }
 
 STORAGE_FILE = "sector_data.json"
-EMPTY_NEWS = []
 
 
 def fetch_sector_change(ticker: str) -> float:
@@ -53,8 +51,8 @@ def fetch_sector_change(ticker: str) -> float:
         return 0.0
 
 
-def fetch_news_rss(query: str, max_items: int = 8) -> list:
-    """Google News RSS로 키워드 관련 뉴스를 가져온다."""
+def fetch_news_rss(query: str, max_items: int = 10) -> list:
+    """Google News RSS로 키워드 관련 뉴스를 가져온다. 원문 링크와 발행시각도 함께 보존."""
     url = f"https://news.google.com/rss/search?q={requests.utils.quote(query)}+when:1d&hl=en-US&gl=US&ceid=US:en"
     try:
         res = requests.get(url, timeout=15)
@@ -63,10 +61,11 @@ def fetch_news_rss(query: str, max_items: int = 8) -> list:
         items = []
         for item in root.findall(".//item")[:max_items]:
             title = item.findtext("title", "")
+            link = item.findtext("link", "")
             source_el = item.find("source")
             source = source_el.text if source_el is not None else ""
-            pub_date = item.findtext("pubDate", "")
-            items.append({"title": title, "source": source, "pubDate": pub_date})
+            pub_date = item.findtext("pubDate", "")  # RFC822 형식, 예: "Mon, 30 Jun 2026 06:30:00 GMT"
+            items.append({"title": title, "link": link, "source": source, "pubDate": pub_date})
         return items
     except Exception as e:
         print(f"  [RSS-FAIL] {query}: {e}")
@@ -74,20 +73,40 @@ def fetch_news_rss(query: str, max_items: int = 8) -> list:
 
 
 def summarize_with_gemini(sector_name: str, raw_news: list, max_retries: int = 3) -> list:
-    """Gemini로 뉴스 제목들을 한국어로 요약/번역. 실패 시 빈 리스트."""
+    """Gemini로 뉴스 제목들을 한국어로 요약/번역.
+    - 발행시각순(최신 우선)으로 검토하도록 지시해 시점이 다른 모순 정보 혼동을 줄인다.
+    - 원문 링크는 Gemini를 거치지 않고 코드에서 직접 매칭해 보존한다 (AI가 링크를 잘못 만들 위험 제거)."""
     if not raw_news:
         return []
 
-    titles_text = "\n".join(f"- {n['title']} ({n['source']})" for n in raw_news)
-    prompt = f"""다음은 "{sector_name}" 섹터 관련 영문 뉴스 제목 목록입니다.
+    # 최신순 정렬 (pubDate 기준) — 같은 주제라도 더 최근 정보를 우선 검토하도록
+    def parse_date(item):
+        try:
+            from email.utils import parsedate_to_datetime
+            return parsedate_to_datetime(item["pubDate"])
+        except Exception:
+            return datetime.min
 
-{titles_text}
+    sorted_news = sorted(raw_news, key=parse_date, reverse=True)
 
-이 중 중복되거나 의미 없는 것은 제외하고, 최대 4개를 골라 각각 한국어로 짧게 번역/요약하세요.
-원문에 없는 내용은 추가하지 마세요.
+    # Gemini에게는 인덱스 번호로 식별시켜서, 응답에서 그 인덱스로 원문 링크를 역매칭한다
+    numbered_list = "\n".join(
+        f"[{i}] {n['title']} ({n['source']}, 발행: {n['pubDate']})"
+        for i, n in enumerate(sorted_news)
+    )
+
+    prompt = f"""다음은 "{sector_name}" 섹터 관련 영문 뉴스 제목 목록입니다. 발행시각이 최신순으로 정렬되어 있습니다.
+
+{numbered_list}
+
+작업 지침:
+1. 중복되거나 의미 없는 것은 제외하고, 최대 4개를 선택하세요.
+2. 같은 사안에 대해 서로 다른 시점·맥락의 정보가 섞여 있다면(예: "이번 주 하락" vs "오늘 반등"), 둘 다 의미가 있다면 시점 차이를 제목에 명시하세요 (예: "이번 주 하락세, 단 오늘 새벽 반등").
+3. 각 뉴스는 한국어로 짧게 번역/요약하세요. 원문에 없는 내용은 추가하지 마세요.
+4. 선택한 뉴스의 원래 인덱스 번호([0], [1] 등)를 반드시 포함하세요.
 
 JSON 형식으로만 응답하세요 (다른 설명 없이):
-{{"news": [{{"title": "한국어 요약 제목", "source": "출처", "time": "오늘"}}]}}
+{{"news": [{{"index": 0, "title": "한국어 요약 제목"}}]}}
 """
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={GEMINI_API_KEY}"
 
@@ -97,7 +116,7 @@ JSON 형식으로만 응답하세요 (다른 설명 없이):
                 url,
                 json={
                     "contents": [{"parts": [{"text": prompt}]}],
-                    "generationConfig": {"temperature": 0.2, "maxOutputTokens": 800},
+                    "generationConfig": {"temperature": 0.2, "maxOutputTokens": 900},
                 },
                 timeout=30,
             )
@@ -106,8 +125,24 @@ JSON 형식으로만 응답하세요 (다른 설명 없이):
             raw = data["candidates"][0]["content"]["parts"][0]["text"]
             raw = raw.replace("```json", "").replace("```", "").strip()
             parsed = json.loads(raw)
-            news = parsed.get("news", [])
-            return news if isinstance(news, list) else []
+            picked = parsed.get("news", [])
+            if not isinstance(picked, list):
+                return []
+
+            # Gemini가 고른 인덱스를 원본 뉴스(링크 포함)와 다시 매칭
+            result = []
+            for p in picked:
+                idx = p.get("index")
+                if idx is None or not isinstance(idx, int) or idx < 0 or idx >= len(sorted_news):
+                    continue
+                original = sorted_news[idx]
+                result.append({
+                    "title": p.get("title", original["title"]),
+                    "source": original["source"],
+                    "link": original["link"],
+                    "time": format_relative_time(original["pubDate"]),
+                })
+            return result
 
         except requests.exceptions.HTTPError as e:
             status = e.response.status_code if e.response is not None else None
@@ -125,8 +160,28 @@ JSON 형식으로만 응답하세요 (다른 설명 없이):
     return []
 
 
+def format_relative_time(pub_date_str: str) -> str:
+    """RFC822 발행시각을 'N시간 전' 형태의 한국어 상대시간으로 변환."""
+    try:
+        from email.utils import parsedate_to_datetime
+        pub = parsedate_to_datetime(pub_date_str)
+        now = datetime.now(pub.tzinfo)
+        diff = now - pub
+        hours = int(diff.total_seconds() // 3600)
+        if hours < 1:
+            minutes = int(diff.total_seconds() // 60)
+            return f"{minutes}분 전" if minutes > 0 else "방금"
+        elif hours < 24:
+            return f"{hours}시간 전"
+        else:
+            days = hours // 24
+            return f"{days}일 전"
+    except Exception:
+        return "오늘"
+
+
 def collect_all_sectors() -> dict:
-    """11개 섹터의 등락률 + 뉴스를 수집. 절대 중간에 멈추지 않는다."""
+    """11개 섹터의 등락률 + 뉴스(링크 포함)를 수집. 절대 중간에 멈추지 않는다."""
     result = {}
     for name, conf in SECTORS.items():
         ticker = conf["ticker"]
@@ -182,7 +237,7 @@ def send_telegram_message(text: str, reply_markup: dict = None):
 
 
 def main():
-    print("=== 섹터 데이터 수집 시작 (yfinance + Google News RSS) ===")
+    print("=== 섹터 데이터 수집 시작 (yfinance + Google News RSS + 링크 보존) ===")
     data = collect_all_sectors()
     save_data(data)
 
