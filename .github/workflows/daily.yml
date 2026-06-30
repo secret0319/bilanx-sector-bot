@@ -1,9 +1,6 @@
 name: Daily Sector Collection
 
 on:
-  schedule:
-    - cron: '0 22 * * *'  # 한국시간 오전 7시 (오전판)
-    - cron: '0 11 * * *'  # 한국시간 오후 8시 (오후판)
   workflow_dispatch: {}
 
 jobs:
