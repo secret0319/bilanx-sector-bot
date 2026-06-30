@@ -1,7 +1,14 @@
 """
-BILANX 섹터 트래픽 봇 (v4)
-GICS 11개 섹터 ETF(SPDR Select Sector)의 등락률을 yfinance로 안정적으로 가져오고,
-관련 뉴스는 Google News RSS로 가져와 Gemini가 한국어로 요약 + 원문 링크를 함께 보존한다.
+BILANX 섹터 트래픽 봇 (v5 - 최종)
+
+흐름:
+1. 휴장일(주말/공휴일) 체크 → 휴장이면 조용히 종료
+2. GICS 11개 섹터 ETF의 당일 등락률을 yfinance로 수집
+3. 각 섹터마다:
+   - Top10 보유종목 중 "당일 등락폭(절댓값)이 큰 3종목"을 골라 종목명으로 뉴스 검색
+   - Reuters/Bloomberg/CNBC/WSJ/Investing.com 등 정통매체에서 그 섹터 종합 뉴스 2건 검색
+   - 총 5건의 뉴스 후보를 Gemini가 한국어로 요약 (원문 링크는 코드가 직접 보존)
+4. 텔레그램 채널에 섹터별 트래픽 카드 발행
 """
 
 import os
@@ -9,7 +16,8 @@ import json
 import time
 import requests
 import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import datetime, timedelta
+from email.utils import parsedate_to_datetime
 
 import yfinance as yf
 
@@ -20,24 +28,62 @@ GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 
 # ── GICS 11개 섹터 ↔ SPDR Select Sector ETF 티커 ──
 SECTORS = {
-    "정보기술":          {"ticker": "XLK",  "query": "technology stocks"},
-    "금융":              {"ticker": "XLF",  "query": "financial stocks bank"},
-    "헬스케어":          {"ticker": "XLV",  "query": "healthcare pharma stocks"},
-    "임의소비재":        {"ticker": "XLY",  "query": "consumer discretionary retail stocks"},
-    "필수소비재":        {"ticker": "XLP",  "query": "consumer staples stocks"},
-    "산업재":            {"ticker": "XLI",  "query": "industrial stocks"},
-    "소재":              {"ticker": "XLB",  "query": "materials mining stocks"},
-    "에너지":            {"ticker": "XLE",  "query": "energy oil gas stocks"},
-    "유틸리티":          {"ticker": "XLU",  "query": "utilities stocks"},
-    "부동산":            {"ticker": "XLRE", "query": "real estate REIT stocks"},
-    "커뮤니케이션서비스": {"ticker": "XLC",  "query": "communication services media stocks"},
+    "정보기술":          "XLK",
+    "금융":              "XLF",
+    "헬스케어":          "XLV",
+    "임의소비재":        "XLY",
+    "필수소비재":        "XLP",
+    "산업재":            "XLI",
+    "소재":              "XLB",
+    "에너지":            "XLE",
+    "유틸리티":          "XLU",
+    "부동산":            "XLRE",
+    "커뮤니케이션서비스": "XLC",
 }
+
+# 정통 매체 (종합 뉴스용 — 칼럼/분석성 사이트 배제)
+TRUSTED_SOURCES = [
+    "reuters.com", "bloomberg.com", "cnbc.com",
+    "wsj.com", "investing.com", "ft.com",
+]
 
 STORAGE_FILE = "sector_data.json"
 
 
+# ─────────────────────────────────────────
+# 0. 휴장일 체크
+# ─────────────────────────────────────────
+
+def is_market_open_yesterday() -> bool:
+    """미국 시장이 '어제(미국 동부시간 기준)' 거래된 날이었는지 확인.
+    SPY의 최근 거래일과 비교해서 판단 — 별도 공휴일 캘린더 불필요."""
+    try:
+        spy = yf.Ticker("SPY")
+        hist = spy.history(period="5d")
+        if hist.empty:
+            print("[WARN] SPY 거래 데이터를 가져오지 못함 — 안전하게 발행 진행")
+            return True  # 판단 불가 시 발행은 막지 않음 (false negative 방지)
+
+        last_trade_date = hist.index[-1].date()
+
+        # 미국 동부시간 기준 "어제" 날짜 계산 (외부 패키지 없이 UTC-5 근사)
+        utc_now = datetime.utcnow()
+        et_now = utc_now - timedelta(hours=5)  # EST 근사치 (서머타임 시 약간의 오차 허용)
+        yesterday_et = (et_now - timedelta(days=1)).date()
+
+        print(f"최근 거래일: {last_trade_date}, 기준 어제(ET): {yesterday_et}")
+        return last_trade_date >= yesterday_et  # 어제 또는 그 이후 데이터가 있으면 정상 거래일로 간주
+
+    except Exception as e:
+        print(f"[WARN] 휴장일 체크 실패: {e} — 안전하게 발행 진행")
+        return True
+
+
+# ─────────────────────────────────────────
+# 1. 등락률 수집
+# ─────────────────────────────────────────
+
 def fetch_sector_change(ticker: str) -> float:
-    """yfinance로 ETF 당일 등락률(%)을 가져온다. 실패하면 0을 반환."""
     try:
         t = yf.Ticker(ticker)
         info = t.fast_info
@@ -51,8 +97,50 @@ def fetch_sector_change(ticker: str) -> float:
         return 0.0
 
 
-def fetch_news_rss(query: str, max_items: int = 10) -> list:
-    """Google News RSS로 키워드 관련 뉴스를 가져온다. 원문 링크와 발행시각도 함께 보존."""
+# ─────────────────────────────────────────
+# 2. Top10 보유종목 중 변동폭 큰 3종목 선정
+# ─────────────────────────────────────────
+
+def get_top_movers(ticker: str, top_n: int = 3) -> list:
+    """ETF의 top_holdings(최대 10개) 중 당일 등락폭(절댓값) 기준 상위 N종목을 반환.
+    반환: [{"symbol": "NVDA", "name": "NVIDIA Corp", "change_percent": 5.8}, ...]"""
+    try:
+        t = yf.Ticker(ticker)
+        holdings_df = t.funds_data.top_holdings
+        if holdings_df is None or holdings_df.empty:
+            return []
+
+        candidates = []
+        for symbol, row in holdings_df.iterrows():
+            try:
+                h = yf.Ticker(symbol)
+                info = h.fast_info
+                last = info.get("lastPrice")
+                prev = info.get("previousClose")
+                if last is None or prev is None or prev == 0:
+                    continue
+                pct = round((last - prev) / prev * 100, 2)
+                candidates.append({
+                    "symbol": symbol,
+                    "name": row.get("Name", symbol),
+                    "change_percent": pct,
+                })
+            except Exception:
+                continue
+
+        candidates.sort(key=lambda x: abs(x["change_percent"]), reverse=True)
+        return candidates[:top_n]
+
+    except Exception as e:
+        print(f"  [HOLDINGS-FAIL] {ticker}: {e}")
+        return []
+
+
+# ─────────────────────────────────────────
+# 3. 뉴스 수집 (종목별 + 정통매체 종합)
+# ─────────────────────────────────────────
+
+def fetch_news_rss(query: str, max_items: int = 5) -> list:
     url = f"https://news.google.com/rss/search?q={requests.utils.quote(query)}+when:1d&hl=en-US&gl=US&ceid=US:en"
     try:
         res = requests.get(url, timeout=15)
@@ -64,7 +152,7 @@ def fetch_news_rss(query: str, max_items: int = 10) -> list:
             link = item.findtext("link", "")
             source_el = item.find("source")
             source = source_el.text if source_el is not None else ""
-            pub_date = item.findtext("pubDate", "")  # RFC822 형식, 예: "Mon, 30 Jun 2026 06:30:00 GMT"
+            pub_date = item.findtext("pubDate", "")
             items.append({"title": title, "link": link, "source": source, "pubDate": pub_date})
         return items
     except Exception as e:
@@ -72,38 +160,48 @@ def fetch_news_rss(query: str, max_items: int = 10) -> list:
         return []
 
 
-def summarize_with_gemini(sector_name: str, raw_news: list, max_retries: int = 3) -> list:
-    """Gemini로 뉴스 제목들을 한국어로 요약/번역.
-    - 발행시각순(최신 우선)으로 검토하도록 지시해 시점이 다른 모순 정보 혼동을 줄인다.
-    - 원문 링크는 Gemini를 거치지 않고 코드에서 직접 매칭해 보존한다 (AI가 링크를 잘못 만들 위험 제거)."""
-    if not raw_news:
+def fetch_stock_news(stock_name: str) -> list:
+    """개별 종목명으로 뉴스 검색 (Top1건만 채택용 후보 풀)."""
+    return fetch_news_rss(f"{stock_name} stock", max_items=3)
+
+
+def fetch_trusted_sector_news(sector_query: str) -> list:
+    """정통매체로 한정해 그 섹터의 종합 뉴스를 검색."""
+    site_filter = " OR ".join(f"site:{s}" for s in TRUSTED_SOURCES)
+    query = f"({site_filter}) {sector_query}"
+    return fetch_news_rss(query, max_items=6)
+
+
+# ─────────────────────────────────────────
+# 4. Gemini로 한국어 요약 (링크는 코드가 직접 매칭해 보존)
+# ─────────────────────────────────────────
+
+def summarize_candidates_with_gemini(sector_name: str, candidates: list, max_pick: int, max_retries: int = 3) -> list:
+    """candidates: [{"title", "link", "source", "pubDate"}, ...]
+    Gemini는 인덱스로 골라서 한국어 제목만 만들고, 링크는 코드가 원본에서 그대로 가져온다."""
+    if not candidates:
         return []
 
-    # 최신순 정렬 (pubDate 기준) — 같은 주제라도 더 최근 정보를 우선 검토하도록
     def parse_date(item):
         try:
-            from email.utils import parsedate_to_datetime
             return parsedate_to_datetime(item["pubDate"])
         except Exception:
             return datetime.min
 
-    sorted_news = sorted(raw_news, key=parse_date, reverse=True)
-
-    # Gemini에게는 인덱스 번호로 식별시켜서, 응답에서 그 인덱스로 원문 링크를 역매칭한다
+    sorted_candidates = sorted(candidates, key=parse_date, reverse=True)
     numbered_list = "\n".join(
-        f"[{i}] {n['title']} ({n['source']}, 발행: {n['pubDate']})"
-        for i, n in enumerate(sorted_news)
+        f"[{i}] {n['title']} ({n['source']})" for i, n in enumerate(sorted_candidates)
     )
 
-    prompt = f"""다음은 "{sector_name}" 섹터 관련 영문 뉴스 제목 목록입니다. 발행시각이 최신순으로 정렬되어 있습니다.
+    prompt = f"""다음은 "{sector_name}" 섹터 관련 영문 뉴스 제목 후보 목록입니다.
 
 {numbered_list}
 
 작업 지침:
-1. 중복되거나 의미 없는 것은 제외하고, 최대 4개를 선택하세요.
-2. 같은 사안에 대해 서로 다른 시점·맥락의 정보가 섞여 있다면(예: "이번 주 하락" vs "오늘 반등"), 둘 다 의미가 있다면 시점 차이를 제목에 명시하세요 (예: "이번 주 하락세, 단 오늘 새벽 반등").
-3. 각 뉴스는 한국어로 짧게 번역/요약하세요. 원문에 없는 내용은 추가하지 마세요.
-4. 선택한 뉴스의 원래 인덱스 번호([0], [1] 등)를 반드시 포함하세요.
+1. 중복되거나 의미 없는 것은 제외하고, 최대 {max_pick}개를 선택하세요.
+2. 광고성·칼럼성("~해야 할 이유", "~주식 3가지" 같은 투자 가이드 글)보다는 실제 사건을 다루는 뉴스를 우선하세요.
+3. 한국어로 짧게 번역/요약하세요. 원문에 없는 내용은 추가하지 마세요.
+4. 선택한 뉴스의 원래 인덱스 번호를 반드시 포함하세요.
 
 JSON 형식으로만 응답하세요 (다른 설명 없이):
 {{"news": [{{"index": 0, "title": "한국어 요약 제목"}}]}}
@@ -116,7 +214,7 @@ JSON 형식으로만 응답하세요 (다른 설명 없이):
                 url,
                 json={
                     "contents": [{"parts": [{"text": prompt}]}],
-                    "generationConfig": {"temperature": 0.2, "maxOutputTokens": 900},
+                    "generationConfig": {"temperature": 0.2, "maxOutputTokens": 800},
                 },
                 timeout=30,
             )
@@ -129,13 +227,12 @@ JSON 형식으로만 응답하세요 (다른 설명 없이):
             if not isinstance(picked, list):
                 return []
 
-            # Gemini가 고른 인덱스를 원본 뉴스(링크 포함)와 다시 매칭
             result = []
             for p in picked:
                 idx = p.get("index")
-                if idx is None or not isinstance(idx, int) or idx < 0 or idx >= len(sorted_news):
+                if idx is None or not isinstance(idx, int) or idx < 0 or idx >= len(sorted_candidates):
                     continue
-                original = sorted_news[idx]
+                original = sorted_candidates[idx]
                 result.append({
                     "title": p.get("title", original["title"]),
                     "source": original["source"],
@@ -161,9 +258,7 @@ JSON 형식으로만 응답하세요 (다른 설명 없이):
 
 
 def format_relative_time(pub_date_str: str) -> str:
-    """RFC822 발행시각을 'N시간 전' 형태의 한국어 상대시간으로 변환."""
     try:
-        from email.utils import parsedate_to_datetime
         pub = parsedate_to_datetime(pub_date_str)
         now = datetime.now(pub.tzinfo)
         diff = now - pub
@@ -180,23 +275,48 @@ def format_relative_time(pub_date_str: str) -> str:
         return "오늘"
 
 
+# ─────────────────────────────────────────
+# 5. 섹터별 전체 수집 흐름
+# ─────────────────────────────────────────
+
+def collect_sector(name: str, ticker: str) -> dict:
+    pct = fetch_sector_change(ticker)
+
+    # (1) Top10 중 변동폭 큰 3종목 → 종목별 뉴스 후보 모으기
+    movers = get_top_movers(ticker, top_n=3)
+    stock_candidates = []
+    for m in movers:
+        stock_candidates.extend(fetch_stock_news(m["name"]))
+
+    # (2) 정통매체 종합 뉴스 후보
+    trusted_candidates = fetch_trusted_sector_news(name)
+
+    # 종목별 뉴스 3건 + 정통매체 종합 2건 → Gemini에게 각각 따로 요청해 비율 보장
+    stock_news = summarize_candidates_with_gemini(name, stock_candidates, max_pick=3)
+    trusted_news = summarize_candidates_with_gemini(name, trusted_candidates, max_pick=2)
+
+    combined = stock_news + trusted_news
+    return {"change_percent": pct, "news": combined}
+
+
 def collect_all_sectors() -> dict:
-    """11개 섹터의 등락률 + 뉴스(링크 포함)를 수집. 절대 중간에 멈추지 않는다."""
     result = {}
-    for name, conf in SECTORS.items():
-        ticker = conf["ticker"]
-        query = conf["query"]
+    for name, ticker in SECTORS.items():
+        try:
+            result[name] = collect_sector(name, ticker)
+        except Exception as e:
+            print(f"[SECTOR-FAIL] {name}: {e}")
+            result[name] = {"change_percent": 0, "news": []}
 
-        pct = fetch_sector_change(ticker)
-        raw_news = fetch_news_rss(query)
-        news = summarize_with_gemini(name, raw_news)
-
-        result[name] = {"change_percent": pct, "news": news}
-        status = "OK" if news else ("PRICE-ONLY" if pct != 0 else "EMPTY")
-        print(f"[{status}] {name}({ticker}): {pct}%, 뉴스 {len(news)}건")
+        info = result[name]
+        print(f"[{'OK' if info['news'] else 'EMPTY'}] {name}({ticker}): {info['change_percent']}%, 뉴스 {len(info['news'])}건")
 
     return result
 
+
+# ─────────────────────────────────────────
+# 6. 저장 및 텔레그램 발행
+# ─────────────────────────────────────────
 
 def save_data(data: dict):
     payload = {"updated_at": datetime.utcnow().isoformat(), "sectors": data}
@@ -237,7 +357,12 @@ def send_telegram_message(text: str, reply_markup: dict = None):
 
 
 def main():
-    print("=== 섹터 데이터 수집 시작 (yfinance + Google News RSS + 링크 보존) ===")
+    print("=== 휴장일 체크 ===")
+    if not is_market_open_yesterday():
+        print("=== 휴장일로 판단 — 발행 건너뜀 ===")
+        return
+
+    print("=== 섹터 데이터 수집 시작 ===")
     data = collect_all_sectors()
     save_data(data)
 
