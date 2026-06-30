@@ -141,14 +141,10 @@ def get_top_movers(ticker: str, top_n: int = 3) -> list:
 # ─────────────────────────────────────────
 
 def get_edition() -> str:
-    """현재 UTC 시각 기준으로 '오전판'/'오후판'을 판단.
-    오전 7시 KST = UTC 22:00 트리거, 오후 8시 KST = UTC 11:00 트리거.
-    두 트리거 사이의 중간 지점(UTC 16:30 = KST 새벽 1:30)을 기준으로 가른다."""
     hour_utc = datetime.utcnow().hour
-    if 16 <= hour_utc < 22:
+    if 8 <= hour_utc < 16:
         return "오후"
     return "오전"
-
 
 def fetch_news_rss(query: str, max_items: int = 5, window: str = "when:1d") -> list:
     url = f"https://news.google.com/rss/search?q={requests.utils.quote(query)}+{window}&hl=en-US&gl=US&ceid=US:en"
