@@ -1,6 +1,14 @@
 {
   "version": 2,
+  "functions": {
+    "webhook.js": {
+      "runtime": "@vercel/node"
+    }
+  },
   "rewrites": [
-    { "source": "/api/webhook", "destination": "/webhook.js" }
+    {
+      "source": "/api/webhook",
+      "destination": "/webhook.js"
+    }
   ]
 }
