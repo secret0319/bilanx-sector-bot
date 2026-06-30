@@ -9,49 +9,66 @@ export default async function handler(req, res) {
   const update = req.body;
   const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 
+  console.log('=== Webhook 호출됨 ===');
+  console.log('update 전체:', JSON.stringify(update));
+
   try {
     if (update.callback_query) {
       const query = update.callback_query;
-      const data = query.data; // "sector:정보기술" 또는 "back"
+      const data = query.data;
       const chatId = query.message.chat.id;
       const messageId = query.message.message_id;
 
-      // 저장된 섹터 데이터 가져오기 (GitHub Raw에서 읽기)
+      console.log(`콜백 데이터: ${data}, chatId: ${chatId}, messageId: ${messageId}`);
+
       const sectorData = await fetchSectorData();
+      console.log('섹터 데이터 로드 성공, 키 개수:', Object.keys(sectorData.sectors || {}).length);
 
       if (data === 'back') {
-        // 메인 화면으로 복귀
         await editToMainView(BOT_TOKEN, chatId, messageId, sectorData);
       } else if (data.startsWith('sector:')) {
         const sectorName = data.replace('sector:', '');
+        console.log('요청된 섹터명:', sectorName);
+        console.log('존재하는 섹터 키들:', Object.keys(sectorData.sectors));
         await editToSectorNews(BOT_TOKEN, chatId, messageId, sectorName, sectorData);
       }
 
-      // 콜백 응답 (로딩 표시 제거)
-      await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/answerCallbackQuery`, {
+      const callbackRes = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/answerCallbackQuery`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ callback_query_id: query.id }),
       });
+      const callbackJson = await callbackRes.json();
+      console.log('answerCallbackQuery 결과:', JSON.stringify(callbackJson));
+    } else {
+      console.log('callback_query 없음 - 일반 메시지이거나 다른 업데이트 타입');
     }
 
     return res.status(200).json({ ok: true });
   } catch (err) {
-    console.error(err);
-    return res.status(200).json({ ok: true }); // 텔레그램은 항상 200 기대
+    console.error('=== Webhook 에러 발생 ===');
+    console.error(err.message);
+    console.error(err.stack);
+    return res.status(200).json({ ok: true });
   }
 }
 
 async function fetchSectorData() {
-  // GitHub Actions가 매일 커밋하는 sector_data.json을 raw로 읽음
-  const url = process.env.SECTOR_DATA_URL; // 예: https://raw.githubusercontent.com/.../sector_data.json
+  const url = process.env.SECTOR_DATA_URL;
+  console.log('SECTOR_DATA_URL:', url);
+  if (!url) {
+    throw new Error('SECTOR_DATA_URL 환경변수가 설정되지 않았습니다');
+  }
   const res = await fetch(url, { cache: 'no-store' });
+  if (!res.ok) {
+    throw new Error(`섹터 데이터 fetch 실패: ${res.status}`);
+  }
   return res.json();
 }
 
 function buildMainKeyboard(payload) {
   const sectors = Object.entries(payload.sectors).sort(
-    (a, b) => Math.abs(b[1].change_percent) - Math.abs(a[1].change_percent)
+    (a, b) => Math.abs(b[1].change_percent || 0) - Math.abs(a[1].change_percent || 0)
   );
   const buttons = [];
   let row = [];
@@ -79,9 +96,13 @@ async function editToMainView(token, chatId, messageId, payload) {
 
 async function editToSectorNews(token, chatId, messageId, sectorName, payload) {
   const sector = payload.sectors[sectorName];
-  if (!sector) return;
+  if (!sector) {
+    console.error(`섹터 "${sectorName}"를 찾을 수 없음. 사용 가능한 키:`, Object.keys(payload.sectors));
+    return;
+  }
 
-  let text = `📊 <b>${sectorName}</b> (${sector.change_percent >= 0 ? '+' : ''}${sector.change_percent}%)\n\n`;
+  const pct = sector.change_percent || 0;
+  let text = `📊 <b>${sectorName}</b> (${pct >= 0 ? '+' : ''}${pct}%)\n\n`;
   if (!sector.news || sector.news.length === 0) {
     text += '오늘 수집된 뉴스가 없습니다.';
   } else {
@@ -98,7 +119,7 @@ async function editToSectorNews(token, chatId, messageId, sectorName, payload) {
 }
 
 async function editMessage(token, chatId, messageId, text, replyMarkup) {
-  await fetch(`https://api.telegram.org/bot${token}/editMessageText`, {
+  const res = await fetch(`https://api.telegram.org/bot${token}/editMessageText`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -109,4 +130,10 @@ async function editMessage(token, chatId, messageId, text, replyMarkup) {
       reply_markup: replyMarkup,
     }),
   });
+  const json = await res.json();
+  console.log('editMessageText 결과:', JSON.stringify(json));
+  if (!json.ok) {
+    console.error('editMessageText 실패! 텔레그램 응답:', JSON.stringify(json));
+  }
+  return json;
 }
