@@ -18,7 +18,7 @@ jobs:
           python-version: '3.11'
 
       - name: 패키지 설치
-        run: pip install requests
+        run: pip install requests yfinance
 
       - name: 섹터 데이터 수집 및 텔레그램 발행
         env:
