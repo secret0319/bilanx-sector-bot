@@ -1,0 +1,280 @@
+{
+  "updated_at": "2026-06-30T06:29:24.609334",
+  "sectors": {
+    "정보기술": {
+      "change_percent": 2.16,
+      "news": [
+        {
+          "title": "기술주 7개, 월스트리트 회전으로 2.3조 달러 하락",
+          "source": "Financial Times",
+          "time": "오늘"
+        },
+        {
+          "title": "기술주 상승 및 미-이란 긴장 완화로 미국 선물 상승",
+          "source": "Bloomberg.com",
+          "time": "오늘"
+        },
+        {
+          "title": "건전한 시장 회전 대 기술 거품 논쟁",
+          "source": "invesco.com",
+          "time": "오늘"
+        },
+        {
+          "title": "AI 상승세로 기술주가 월스트리트 상승 견인",
+          "source": "Moomoo",
+          "time": "오늘"
+        }
+      ]
+    },
+    "금융": {
+      "change_percent": 0.17,
+      "news": [
+        {
+          "title": "미국 은행 주식, 연준 불확실성 속 저평가 상태",
+          "source": "simplywall.st",
+          "time": "오늘"
+        },
+        {
+          "title": "지역 은행 주식, 금리 불안감 해소되며 상승세",
+          "source": "Kalkine",
+          "time": "오늘"
+        },
+        {
+          "title": "연준 결정, 코스탈 파이낸셜 등 미국 금융 주식 주목",
+          "source": "simplywall.st",
+          "time": "오늘"
+        },
+        {
+          "title": "1분기 실적: 퍼스트 파이낸셜 은행 등 지역 은행 비교 분석",
+          "source": "TradingView",
+          "time": "오늘"
+        }
+      ]
+    },
+    "헬스케어": {
+      "change_percent": 0.29,
+      "news": [
+        {
+          "title": "메인 파마, 헬스케어 주가 상승세 속 발판 마련 가능성은?",
+          "source": "Kalkine",
+          "time": "오늘"
+        },
+        {
+          "title": "월요일 애프터마켓에서 주목받는 12개 헬스케어 주식",
+          "source": "Benzinga",
+          "time": "오늘"
+        },
+        {
+          "title": "중국 바이오 제약 주식, AI보다 헬스케어 선호하며 급등",
+          "source": "marketscreener.com",
+          "time": "오늘"
+        },
+        {
+          "title": "저부채 소형 제약주, 병원 부문 진출로 13% 급등",
+          "source": "Dalal Street Investment Journal",
+          "time": "오늘"
+        }
+      ]
+    },
+    "임의소비재": {
+      "change_percent": 2.4,
+      "news": [
+        {
+          "title": "AI와 할인, 소매주를 포기하지 않는 이유",
+          "source": "Barron's",
+          "time": "오늘"
+        },
+        {
+          "title": "언더아머, 스포츠웨어 섹터 압박 속 항해",
+          "source": "Kalkine Media",
+          "time": "오늘"
+        },
+        {
+          "title": "타겟, 재량 소비 수요 흔들림 속 주목",
+          "source": "Kalkine Media",
+          "time": "오늘"
+        },
+        {
+          "title": "오토스포츠 그룹, 자동차 소매주 관심 증가에 상승",
+          "source": "Kalkine",
+          "time": "오늘"
+        }
+      ]
+    },
+    "필수소비재": {
+      "change_percent": -0.57,
+      "news": [
+        {
+          "title": "배당 수익과 방어적 안전성을 위한 저평가 필수소비재 주식 3가지",
+          "source": "Yahoo Finance",
+          "time": "오늘"
+        },
+        {
+          "title": "인플레이션 저항력 있는 주식 3가지, 연말까지 상승세 지속 전망",
+          "source": "The Motley Fool",
+          "time": "오늘"
+        },
+        {
+          "title": "필수소비재 섹터 SPDR (XLP) 주요 전환점 보고",
+          "source": "GuruFocus",
+          "time": "오늘"
+        },
+        {
+          "title": "필수소비재 성장세 회복에 Cobram Estate (ASX:CBO) 주가 상승",
+          "source": "Kalkine",
+          "time": "오늘"
+        }
+      ]
+    },
+    "산업재": {
+      "change_percent": 0.59,
+      "news": [
+        {
+          "title": "AI 인프라 구축 수혜주 2선 공개 (SpaceX, Intel 제외)",
+          "source": "The Motley Fool",
+          "time": "오늘"
+        },
+        {
+          "title": "지금 이 산업주를 사면 평생 부자가 될 수 있다",
+          "source": "Yahoo Finance",
+          "time": "오늘"
+        },
+        {
+          "title": "미국 증시 마감: 다우존스 산업평균지수 0.59% 상승",
+          "source": "Investing.com",
+          "time": "오늘"
+        },
+        {
+          "title": "무역 긴장 고조 속 중국 노출 적은 유럽 산업주",
+          "source": "simplywall.st",
+          "time": "오늘"
+        }
+      ]
+    },
+    "소재": {
+      "change_percent": -2.11,
+      "news": [
+        {
+          "title": "MP Materials 주식 매수/매도 이유 2가지와 1가지",
+          "source": "The Motley Fool",
+          "time": "오늘"
+        },
+        {
+          "title": "심해 채굴 붐, 소규모 국가들을 값비싼 법적 분쟁에 얽어매다",
+          "source": "AZoM",
+          "time": "오늘"
+        },
+        {
+          "title": "견고한 재무 상태와 명확한 채굴 촉매제를 가진 페니 주식 3개",
+          "source": "simplywall.st",
+          "time": "오늘"
+        },
+        {
+          "title": "Euclid의 REalloys, 군사 기지 광물 플랜트 건설 계약 업체 중 하나",
+          "source": "Crain's Cleveland",
+          "time": "오늘"
+        }
+      ]
+    },
+    "에너지": {
+      "change_percent": -1.29,
+      "news": [
+        {
+          "title": "유가 상승 노출 에너지 주식, 개인 투자자 주목",
+          "source": "simplywall.st",
+          "time": "오늘"
+        },
+        {
+          "title": "주목할 만한 에너지 주식 1개와 부진한 주식 2개",
+          "source": "StockStory",
+          "time": "오늘"
+        },
+        {
+          "title": "퍼미안 지역에 AI 도입, 가스 주식 2개와 파이프라인 1개 고려",
+          "source": "Barron's",
+          "time": "오늘"
+        },
+        {
+          "title": "유가 하락에 따른 에너지 ETF 매수",
+          "source": "TradingView",
+          "time": "오늘"
+        }
+      ]
+    },
+    "유틸리티": {
+      "change_percent": -0.17,
+      "news": [
+        {
+          "title": "유럽 유틸리티, 2분기 모멘텀 잃었지만 새로운 매수 기회 등장",
+          "source": "Morningstar",
+          "time": "오늘"
+        },
+        {
+          "title": "AI 전력 수요: 데이터센터 확장에 따른 유틸리티 기업의 수익 증대",
+          "source": "Seeking Alpha",
+          "time": "오늘"
+        },
+        {
+          "title": "애트모스 에너지 주식 및 고금리 시대에 적합한 유틸리티 배당주 2가지",
+          "source": "simplywall.st",
+          "time": "오늘"
+        },
+        {
+          "title": "유틸리티 주식 시장 부진에도 모건 스탠리는 퍼스트에너지(FE) 선호",
+          "source": "Yahoo Finance",
+          "time": "오늘"
+        }
+      ]
+    },
+    "부동산": {
+      "change_percent": -1.21,
+      "news": [
+        {
+          "title": "리츠 ETF를 통한 부동산 투자, 간편하게",
+          "source": "Think And Retire",
+          "time": "오늘"
+        },
+        {
+          "title": "사이먼 프로퍼티 그룹, 사상 최고가 경신: 리츠 주가 랠리 배경은?",
+          "source": "Seeking Alpha",
+          "time": "오늘"
+        },
+        {
+          "title": "기술주에서 부동산주로의 전환, 부동산 주가 상승",
+          "source": "MSN",
+          "time": "오늘"
+        },
+        {
+          "title": "5.4% 수익률과 안정적인 월 지급을 제공하는 TFSA 주식",
+          "source": "The Motley Fool Canada",
+          "time": "오늘"
+        }
+      ]
+    },
+    "커뮤니케이션서비스": {
+      "change_percent": 1.61,
+      "news": [
+        {
+          "title": "알파벳, 다우존스 지수 편입...버라이즌 대체",
+          "source": "qz.com",
+          "time": "오늘"
+        },
+        {
+          "title": "커뮤니케이션 서비스 섹터, M&A 활동 속 상승",
+          "source": "marketscreener.com",
+          "time": "오늘"
+        },
+        {
+          "title": "메타 주가 상승 요인은?",
+          "source": "Trefis",
+          "time": "오늘"
+        },
+        {
+          "title": "T-모바일 US 주가 3.99% 하락",
+          "source": "TradingKey",
+          "time": "오늘"
+        }
+      ]
+    }
+  }
+}
