@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git pull --rebase origin main
           git add sector_data.json
-          git commit -m "Update sector data $(date +'%Y-%m-%d %H:%M')" || echo "변경사항 없음"
+          git commit -m "Update sector data $(date +'%Y-%m-%d %H:%M')" || echo "변경사항 없음, 커밋 스킵"
+          git pull --rebase origin main || echo "pull 충돌 없음 또는 불필요"
           git push
