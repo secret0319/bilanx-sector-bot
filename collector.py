@@ -376,12 +376,9 @@ def main():
     data = collect_all_sectors(edition)
     save_data(data)
 
-    today = datetime.now().strftime("%Y.%m.%d")
-    if edition == "오전":
-        sub_line = "전날 미국 장마감 기준 결과예요."
-    else:
-        sub_line = "오전 발행 이후 새로 나온 소식 위주예요."
-    header = f"📊 <b>BILANX RESEARCH</b>\n오늘의 섹터별 트래픽 — {edition}판 ({today})\n{sub_line}\n\n섹터를 누르면 관련 뉴스를 볼 수 있어요."
+    today_dt = datetime.now()
+    today_str = f"{today_dt.year}. {today_dt.month}. {today_dt.day}."
+    header = f"📈 <b>주식소통방 NEO by Bilanx Research</b>\n오늘의 미장 섹터별 트래픽 ({today_str})\n\n관심있는 섹터를 눌러보세요⤵️"
     keyboard = build_main_keyboard(data)
 
     send_telegram_message(header, keyboard)
