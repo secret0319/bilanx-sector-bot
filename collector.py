@@ -378,7 +378,7 @@ def main():
 
     today_dt = datetime.now()
     today_str = f"{today_dt.year}. {today_dt.month}. {today_dt.day}."
-    header = f"📈 <b>주식소통방 NEO by Bilanx Research</b>\n오늘의 미장 섹터별 트래픽 ({today_str})\n\n관심있는 섹터를 눌러보세요⤵️"
+    header = f"📈 <b>주식소리통 NEO by Bilanx Research</b>\n오늘의 미장 섹터별 트래픽 ({today_str})\n\n관심있는 섹터를 눌러보세요⤵️"
     keyboard = build_main_keyboard(data)
 
     send_telegram_message(header, keyboard)
