@@ -1,322 +1,328 @@
 {
-  "updated_at": "2026-07-07T11:02:25.224054",
+  "updated_at": "2026-07-07T22:03:16.867892",
   "sectors": {
     "정보기술": {
-      "change_percent": 0.32,
+      "change_percent": -2.08,
       "news": [
         {
-          "title": "마이크론, 주요 고객 확보했으나 메모리 반도체 우려로 주가 하락",
-          "source": "Barron's",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Zc1hwSDhDSExUQ1YyZlVkS2JSTzBPRVVsTmhoTmZsZHNNSHRKdVhWVzZtekVrMWtJbUVMUGtjek1HUjBmamp6MC1qeFIwTC02WXVUMFE0Wmcya1RZeXp5NnlObkdYY29nd0FmMDNiZFhnejQ?oc=5",
-          "time": "11분 전"
+          "title": "삼성 실적 발표 후 반도체 주가 하락, 인텔·어플라이드 머티리얼즈 10% 하락, AMD 8% 하락",
+          "source": "Yahoo Finance",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQejl6d3BwV3J5VzZYMjY5QTJZb0s5Vk5nUWlCZkw1bkNxZnZOS3FQTlZoRUJ0a2JTOHdfTS02ZzFyekhBaU50UWdOQVFQd3h5clhhbmdiYlhlZVJ6MS1yenpxeHRqb3dVS0VRUkEtM3NhWDZsTkgyLTd4UUN6ZXlEdmM1QlFEanZ4ZGxLRU43c2ZHMGFJa3B4dUVEWE4?oc=5",
+          "time": "7시간 전"
         },
         {
-          "title": "인텔 주가 화요일 하락 이유는?",
-          "source": "Benzinga",
-          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVlN6b2pVSGhMemZ1aGpSdW5WbVJ4QkJaa0tsU2FMaWVYaDY5MHlQV2RKMDlNRVVGcDdlbk1LWkN1YjJ3VXNPazNTTEY4ZDc0RUJrdVhXNGpGcHAtSjJVSDJMVS1OS3hDbGplRzR6ajZoQ1Y2bHdRTFFpZlBnU2I1NExYT0dMa1JmdnVCZEh4amh6TGxrODhyTmRhLTZHQQ?oc=5",
-          "time": "14분 전"
+          "title": "Lam Research (LRCX) 주가 6.9% 하락, 그 이유는?",
+          "source": "MarketBeat",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbWItclFZUkY2OUt3aUEzTWFmUUFoMWEyYXRIdzVPTTRadjNJQ2NDS21Ec2tXSkhtNllwQW9INHQta1dYSzVjci1fc0lDN2NLMF9OOTVfVU02QjFXdDZLWGxvOXBJV3RPS3FVWnIyUTVIelFZNUM1d2tvQTZzaUYtdEpSU1Fjc2hhVElnYXlXdV9QYkVUcEZmakRrb3pVVTI0dDNHZw?oc=5",
+          "time": "36분 전"
         },
         {
-          "title": "인텔 지원 AI 칩 및 소프트웨어 제조사 Syntiant, IPO 신청",
-          "source": "Seeking Alpha",
-          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUHd2X25qQVZjOS12dlBxYmxlOTB6aEVLNjJ5OHpRbTFjMTlMVHlQbUVsUERXcTdqMTk5US16TS1NUmF5UkM5Z0pkVnpMRHA2cFl4aUJFa0R6WkJQUlFqWXV5YjhhUWpuZ1M3Q2VZcTlxN0pGRzhkSFRjRjBtcGtvUVBRaUdXN3lHUGc2Rjd2STRrTkJMMktFUTcwUS1BRGViTlE?oc=5",
-          "time": "2시간 전"
+          "title": "인텔 (INTC) 주가 7월 7일 9.87% 하락, 하락 요인 분석",
+          "source": "TradingKey",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRDVtNDU4Q2dRSDNncF9WMHpJbGxycmlyZXBfOFFzUENmWFRIWlI2NHZJMmxKeU9kRFhPRDFXdUM2SEtJZnVYV2VuamlYNTZNZUE0eXJqZjdyYmdBejZwZWpiMTV5MVNDSlRsT1BzcFJHRWZMTFZzdFhxSDdHTDM0ekZhRTVVVWN4bktz?oc=5",
+          "time": "6시간 전"
         },
         {
-          "title": "ECB, AI 공격 대비 계획 수립 지시",
+          "title": "ECB, 은행들에 AI 사이버 방어 강화 지시",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQVAtc1dKM3NnWUlPTnBqWFp6NEJkdVRINGlvZm9GaEtBeWJHWmcxRHRrZmpXeTdmYzRuSFpFdTVtQldTbXdIMkhjYTAxVXFYSVBjMzg5RDBibm9yNlVfYzc5emRoeWxNQTU2MGp6Z2o2V1RJWXRjQ2tNQUFEOVVsVjdRUGFrRUdWNHFQRFhWbW1aX2lTMUx1OFZLam5YX1BVR1ZEMlJnUVZ3aFRvbU1TMTEtNVBLRFBUY1BRVUNlQTI?oc=5",
-          "time": "1시간 전"
+          "time": "9시간 전"
         },
         {
-          "title": "인텔 지원 AI 칩 및 소프트웨어 업체 Syntiant, IPO 신청",
+          "title": "SK하이닉스 주가 급등락, 280억 달러 딜에 변수",
           "source": "Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSHdGSko2bkxSLTNJLWpyeUZ2d0JHeUdKVlRVYnI5cjFncFlSeXRCSFZURDBkTGxQcXpoTFNfVW01MjNnSE5ERy1Ta0RnbDFRUHhrcXM4Szd1M1JtU2MxTFBDRU1fUkJPcE1LMkF5N3BXcU9vMVVseTBFSUlqbDlxZ2Q5eEhrYWNvZVRpQzVWSU9JRmV3alpVdEdGSERETkhxdXp1c1pTVGpGY2ZCQWdlZVFnVQ?oc=5",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOak9IRUV3NU05Q1R4bzlWbnMzNUFFMkdGWl8xZVJ6WUFvYVAtUHcwU2JvT1I3VW01MjZTS0xaMmZmYUVCMEhmd1VhU1VMeXdtRFkyeVcxSFJQaE9KRGxJZWF6cnJlMzRvTXpLSXRtOWlEZzlqdWhmZnJEY2JHYURKUHZ3Z0RYZXJzNDlyR1BZUExOemU0anhQTmlXWThncnZ3bEwwTFdReTNweDRJNEpxeUQ5SQ?oc=5",
           "time": "12시간 전"
         }
       ]
     },
     "금융": {
-      "change_percent": -0.0,
+      "change_percent": -0.16,
       "news": [
         {
-          "title": "미국 증시: 다우존스 53,000 돌파, 반도체 주식 나스닥 견인",
-          "source": "Goodreturns",
-          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTHlKYkN1T2F0SDFlMlVsSUJjWTRoV2xSbGQ1NTNqc0VsQ3pYMXhxZXZkaUpQenh5V1ZRWmQ5X2c3YkgyakwwWXo3Zi11SUZmV1J4ekhlNi0wWkEyN0N6MkFXeTBNLWRfMHlzYlptVVZYM1pJTVFhazZQdjVkcEdMODdidFR0X1ZYQUhYTU9FVlIwdjQ1RFNsYUVRTlFSOFFJeVE5OWZoU2QwVjhpc3hDbTN0aktuQ2t2OUZCRzNOSlJUenFKTXVvSmVydkNMcEs0cVNveXVCUllfLW8?oc=5",
-          "time": "8시간 전"
+          "title": "피델리티 내셔널 정보 서비스, 경쟁사 대비 강세",
+          "source": "MarketWatch",
+          "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNZ2Z1TWJWU0x6X2R4QTE4YjFUQWV0dnpFSjNVTFRrLVYzdkpaek1RWm82WnA4MTFHd09mTURmN1VteWRjZW5jY0RrRG9jRkdnYUs0VHdSMWhTNFlKTzYxUElXcWlOaTl1WHJZd3h6bWx4WGx3QkJHeVVzTHdUemc3TUk3QjlIckFzcUZMMWJvT0NDVU84Tnd5WEZfNEZQdE1HMC0zQmpMeUJWelc2QnZ6dzV1UzlZOWlaS3pYUmxOTjd5VVNQc3h2YU9QbDUtTzAyUFpPdl82d0VuRDAzMXZGemx1QzhKWkgzSW4xUzNUeTJMUjhENXBCOHQ5WnEwSVI3Z2c?oc=5",
+          "time": "57분 전"
         },
         {
-          "title": "비자(Visa) 법률 고문 줄리 로텐버그, 729,720달러 상당 주식 매도",
-          "source": "Investing.com UK",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNXFfek5NWTZXN2ZJcVkwd3p6UW1tVE5xckthZlR1YWRBUjNfV01Ba3NXS0VvREFmT3VRdUM1MUFINUFLY1hvZ1dOdVVOa19jS2tiZXJfam5FMnNjUDR4aHJYbGhEVHlHNGlGSmYzZGY3Z05SX2lNNlZOUlFNR0lWYjhxcVRQd2hKdG1OaldZYXo0RWRsZnF3YlFsemRlVEpnc0NvNVhja1dTRHlUNDlKbUZiNUpJQUZIZFJIN0NIZzVmcXQteGdsclM3YXo?oc=5",
-          "time": "8시간 전"
+          "title": "사라신 파트너스, 씨티그룹 주식 120만 주 추가 매수",
+          "source": "Quiver Quantitative",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUnBBSEhlNUk4WEsxakJwOEl1RUN2dDdibDhQYTZubS1kank3akZhU2VlRnBUWUwyUVd1RkdyTzlXVzQ5all4X2NONUVwTFM1TUtFLXNnQVZ3cGUxcy1UeE5fQ0xQQTJydE93NXdTdEZadzlZaXh1WkF3cFE1WlZGWm9UdExxOXRpa1h4WVZIVHZlYlJtZjVrMmJIOVl4RzF0LTFna3BWTWRILWwxVWd6RXNhbC10Wnd6emJJSWNKdEJzZktjWXdUT3B3?oc=5",
+          "time": "2시간 전"
         },
         {
-          "title": "코인베이스(Coinbase) 이사 프레더릭 R. 윌슨, 159만 달러 상당 주식 매도",
-          "source": "Investing.com UK",
-          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbXdwVWNCdWRsS1NQNFBSa3hvaXZOZTBEdEJiUmw2a05xZ0JSRmpsZVAwbVpINTVtWUZueXE5VmZEV0xYSWZkdEI4azZOMnc2Qzk5RUM2QnRmNDBWaXAxeG5LbUJWVUY0b1hrZzZPUGRQelo1YUlTVFp2UGlDMzZhWFVDWFh4d1UxNHFSQzh2VkU5Q2MweGhGdG83VGVpNi1XOEJIMG1jZkNyQm5wNzNPMGdsazdPcldvb29xM09TcVpfek0xUU9vOWNn?oc=5",
-          "time": "12시간 전"
+          "title": "아메리칸 익스프레스 목표 주가 338달러로 상향 조정",
+          "source": "MarketBeat",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWkdYdEc4VTdjTnFXYnRaWVRHcjBKdDl5ak5sVXRSOVlXSnl4eU9hWE9XdFVFRUpwTEJDTnRRSzlZQkwzNGtFQlBtSDllWEptUEwwMVI3dmNrdDZpcVpzMjFrNW03a0VWS2hOUkFZZUpFZGJuUjZlR3RPREJIM3h5ZFU4TkZyclMwNXNUdXNJcmlxZGpNQ2llVlJiS1AwX2NtRWd6NVJESjI1a1k?oc=5",
+          "time": "7시간 전"
         },
         {
-          "title": "WSJ 금융 시장 뉴스",
-          "source": "WSJ",
-          "link": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBLcXBCR0lVVEpyNElYSXM1Um5FZ1RyRDdjX3dWNWIydi1IOFJLYThiQXg5cEZnOXRKcGJBYXVZb3A?oc=5",
-          "time": "3137일 전"
+          "title": "영국 중앙은행, AI로 인한 금융 안정 위험 증가 경고",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObUdISUlkdHhqQXoyVHdfNzNTaUp5bmtFYzNxMGQyREZVaWMwdG5Ha2tZSUdBcGo4VGRiX2VzbWxON3ZsZk5nMmJfYi1MdHp3SjRhZWVmSmhVN2JaWE9QRUZQaGV4dzRnN0hiaEVhWk55dURTNTZjdVdlLUlqc3A4SW55RnRFSVdYdm9TNDU0NHBheG91N0VKTUw4TWVObnNrdGN6V3phYUVtNkk?oc=5",
+          "time": "5시간 전"
         }
       ]
     },
     "헬스케어": {
-      "change_percent": -0.25,
+      "change_percent": 1.27,
       "news": [
         {
-          "title": "일라이 릴리, 메디케어 GLP-1 확대 후 19% 저평가 가능성",
-          "source": "simplywall.st",
-          "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOOWZIQzg5MkNKc0ltTjNsa21VUzh4RzFyejFvSUNDZzV5cnMwZzJQQXd3TGxEM205Nlp5SGs2ZGtONDNuSVhjaVoyQnFmclhoM2I2b1dzMWtsZUVyTDB6RnBTSXVBOF95d20tWDNYNUotWWNZY2tvVWRmU1VoSGRiRTdKbXdtdkZQTlhNOFVSSEJCYjg2RWJlNm9DNTFkZWowRnBDOV9wSzRoYWhxQmkwOXViSjNadmV4ZkM5eUZBc0hpcGZEajVMQmFCLW9pZXAzMHBGZ0NFa9IB3AFBVV95cUxNeVVBTXBDaVhTakJzaTd3UlR4dUVqcjVyMVpON0FwTUhBZGVIZHloclo1QnF3X1EwS2Y3TVNLSU9rWGJHY1V1T1dHMmNXR2VkMHhZX1FjVzFNVlBmamVqUlFYRktuNDVidUcwZ2JMZUN6TTEwTC1aUDdsVlVpaTQ4bGtsellsTVVUU01Gcjh1X0NLU1hDaks2cGJjTXFNd0FlSUluWGVjSUtrU2NQUGZhd3hwZ3Y1em5ia0V0OFlOQV9ISTB2WWZaZ3pPek1qZkJzRlh2TzdDYlVndUkx?oc=5",
-          "time": "4시간 전"
+          "title": "길리어드 사이언스, 트로드엘비 첫 번째 암 치료 승인으로 주가 상승",
+          "source": "StocksToTrade",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1XSEF0TEozUEIzQjM0Zk9aOGp4SWtiRHZ3NkVUc1hoR19fSXBwN01XeXozNzJQZWx6SHFhamlvam44bFhueGY4Z1RNUGdRZ0JaYVlKWi0zaW9LMEstVFhJdGRKazFocDJoVm40MFhmZ3BuQ09VajJNRFNJNnA?oc=5",
+          "time": "7시간 전"
         },
         {
-          "title": "머크, 새로운 궤양성 대장염 치료제 3상 임상 성공",
-          "source": "MSN",
-          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQT1VwMTRJMzlEYlJtSFpqRnI1WTlVYTNNXzVXeHhIT3hpUXR2WHpfQy14MVBNbHRlMldobkxJZHJSXzhheTBma2VHNnpnMUFTcHhtcVZFWVBmZHAzbmt6eXJZQVdEZFRzM1ZVc0JQbGN4aEotN0tiWm9YNmtNX0JMdlVROFpsSkhOeHRKc19uZm5rbTBNd0Y2ZFNfaE1hTlVHMWdvQWhwR0ROQzhkb0ZDdE5BQ3lUOGRnbmNSeXhVYXdqdGFtX1hxSUJiMi1oRk0?oc=5",
-          "time": "9시간 전"
+          "title": "존슨앤드존슨 주가 3.1% 상승, 그 이유는?",
+          "source": "MarketBeat",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdVNqbURaVE9TTkFsdmlNWnEyMVhqZ25PNDJ6ZWIwMHVXYVFCdTExYUJyWks1cG1iTnVOWFhrZFM4TDBIWWViYklLZXJNSFJwQl9INXFKVHoxczZPY0JOSWMxRHd2NEFVUWl3WjNvMDFVUldHc19nUW5JamhodFJwaGFXUFJWLVdXRklVSm40M1R4cXppU0dRS1o3TndiOWdkQjRHYmI2a1g?oc=5",
+          "time": "37분 전"
         },
         {
-          "title": "머크, 글로벌 제약 리더로서 장기 성장 모색",
-          "source": "AD HOC NEWS",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZlJYUzJCdU1EMFVNT2hVaUVxWDJhN1RRLVZtWjZmTHRBVVJ0U2NRSmY3U25fNlJPMGhUR3NITmF3cFVHZmUzdEJfZ2QyemN2Q0syNm10Y19pbkJQdkN1NzBWejJyazNIaGlOUTBnR3NvdUpNVFJocVg2TmpUQUpickNSZzNBM0lvVUZfbWstb0RRZmRqMjVfLW5QUjhoNDJzM2gzRUEwc0luUHJsS0g3YUYxZU55YUhYVHJSUy1pQnhwUQ?oc=5",
+          "title": "존슨앤드존슨 주가 264.98달러로 사상 최고치 경신",
+          "source": "Investing.com",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTXNTVG04V0I4ckxGcU5xYTJ0T3NmYXNuNGxVeS00TE5oZ3I0ajlUSldNREFQcHhEdzItbm5yRm16ajVONkMzMTdybUIxellXZHpkZkVWSUpxbWtLYjN6YkxleVptZkxDU29CR19tY1ZqbjRpRldtTXJiOUo0enVwVGZ2U3RmZGc3T2wzZ0xBNHcxSWdQMGVjSXlVeDFwSUxvOFlMcHdWRUlwZEFSd2VfWkFlSQ?oc=5",
+          "time": "8시간 전"
+        },
+        {
+          "title": "헬스케어가 민주당의 중간선거 공격 라인으로 부상",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTzB3R1BvaE5vcjFUR3RaUDVXeHpPN2F0MnVKUUY3VlpVVVJydV9ES1p6bWpTejRTZ3NGM18yZEhMSHdSWks4OW9JUnJ4ZmlMZ1lFMkFJY2FZbmJBVS10NkZ4YktKVGZCeGhvLXJ4blRtcXhmLWFkNlNjVkRrbTc5ZnQteVY4NFBQLV9VNGNpd2E1ci00Z25CZVlpWkZLdEFFZU4zOWVfdjljVUhzMUNqdHlWOUVwM2Nxd0ZJ?oc=5",
           "time": "3시간 전"
         },
         {
-          "title": "인도의 새로운 트랜스젠더 규정, 의사들 우려 및 진료 차질 초래",
+          "title": "미국, 중독 및 정신 건강 프로그램에 2억 8,100만 달러 지원",
           "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOOFcxZFJSSnZoTEZIc2xhNE5IbjZLdjZ6ZnlFcjFscEQxYkstSFd0U094ZGxqRVl4WEpaRmgxbFVCY2FYVk9COVRLUDFybC04UWpYV21Bcm0xTkdtVWhRODNRczI3ZDE1RFFRQWhQUFFZbExnTDhvZG9Xckg4ODE0QnpVMHl1cl9KUXJZT3laVU5JaDVpTW9COFBZaXg1aGpiUFc0bnROU3djMDBrMHVLdks3SjVpTG5zMkJIR3ZlekM3b1ZiLVUwYXVlN3g5TGo4VE16TjNmMG5rSjQ?oc=5",
-          "time": "6시간 전"
-        },
-        {
-          "title": "Vertex, 희귀 질환 분야 강화를 위해 Crinetics를 100억 달러에 인수",
-          "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOX3N1NDFzcDNMSmVSODY1SEJGRm51Sl96QmtwWV9zMHA3RUZTRVlDenhJaG01alZQSU5KZUNWV2NFMFp6c0U5Xy1aZFZ2UXVmNWFGNk1HR1NMcGpJWHVpQjVtQWV2Z0FqMldWWHFwMlA2cHh1eDBtT19sem9BZ1ljblQta09WbWdBcjFzX3JVY2h2WlFsQ1VZ?oc=5",
-          "time": "12시간 전"
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcW9sdzNZMWcwamNCQU5NelZ6S0VpZHlzcEZyS0hiNS1UM2dNZ0xpOW5qUFlkSWNaMmZsaHlXY0hzSmF2QnVrT0cwT0xveEJ1RExCQ3FRUzVrNHpFVEh4dW13RHYtOFp2b3paTVluSEJDWkd1SEpOcWxWWHNUTDNINS1FQkREQ0pYRGFOQlI2UkVLLXo1dDlxTC1ER2cwNkJJdXlJZDZ2SkJyS1daZUJ0VlRRSzduMTBacUh3?oc=5",
+          "time": "23시간 전"
         }
       ]
     },
     "임의소비재": {
-      "change_percent": -0.04,
+      "change_percent": -0.57,
       "news": [
         {
-          "title": "월스트리트 분석가들, 주요 임의소비재 종목에 대해 낙관적",
-          "source": "The Globe and Mail",
-          "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNLUpWMzA1LWdFSk9DVHkwN181dkVFQ1FCQ0w1b3hETzBEdE5KcXRPSEloaXlmcGhRRW1yZTk3VFBKdnNTTW5RYU1aVGNTNEdKMUl5VTF5WGdkSWVUUDRFcGN0RTloWmRnNE42TlVSSGRsOEdyT1Z5cDBQUnQ0WTZrZkplb3FyaXBrZTVxazBNSDJYd2hESWo2V1VfYjk1NElDOERCNzFrVmw5WXhabmpBUzdlSHppaXRmY2FIMEtITVRfYlNtOGdoZEdjZ3poS3hqSkdwWGlBSENKbkloU1BQOExR?oc=5",
+          "title": "BMO, 성장 전망에 로열 캐리비안 주식 '아웃퍼폼'으로 시작",
+          "source": "Investing.com",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZkFXaG5YN195ejJaaTU0ZFp5UFJ2LXN4QV81MjRMSzlnb1VucmpRNlVOOHFHRDl1d21qZlpkLTdNa2k1ZlJ3SVdDeXU4b0dKLWJCVW91Ymg5SVdkQkhaY0F1ellFSXBGS29aWnFERjhmQ1c1d3dDQ2xheml3b0VUdEpLU1l4aXJsd291SndLaUtXWWFiSzZ3dkM5dElKejhkV190QVdJbGpQaWVzYmIwNkc4bFFkczExMzNodzB4MW1Edw?oc=5",
+          "time": "47분 전"
+        },
+        {
+          "title": "분석가, 월스트리트 예상치 상향 전망에 테슬라 주가 상승",
+          "source": "foreignpolicyjournal.com",
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNR0VOeW9oNFh6dUpjLVZPdVIyc3JRbl93NFNNaXVsZFVkeWI2Z29TbXNfSXY4a1g3dW1zT3JKb0cyLWliRFpBWHMwc1R2SVM3WXRJbUVCNmZLZ1V2TWF2REZHbTRwMzFzc3Itc0pNTUpZcWlqSXUta0RzR2pvQnoxcHlVR2hSRkhqTGUxaEZkMFhCb1MtZ3pURkhjOVhqM1VFRnNYbjlYbUlWcFRjWVhHZXhYakZZM01lQkZIdkJuVFR6eEk2NzFGd0JmV01QMko1?oc=5",
           "time": "3시간 전"
         },
         {
-          "title": "테슬라 주식 투자자들에게 엄청난 소식!",
-          "source": "The Motley Fool",
-          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYmZNM0oyeG5CM0JVZGZRMldWSnd2UVh4RURhRWUyOGVEdVcwVDVWME5uMjVqa3NzMGhSOTVzSUZtdE9MNkw5VWluTjhEbjRSd19BazJHSVBsVi1abjMxZk83dFlkdDBYOThvQkdRcmlWRTQzYjlBNEFINllZWEhMd2VmSy1NN2lE?oc=5",
-          "time": "4시간 전"
-        },
-        {
-          "title": "테슬라 로보택시, 텍사스와 캘리포니아 외 첫 도시 마이애미 출시. 주가 회생 가능할까?",
-          "source": "Yahoo Finance",
-          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYlptMVprYkFVNEg5M1BqM0kwYnZ3eHQ5RkJjYkUySWhEcXctYVM4R0FWcDYwOTNJZDhXeHV0SE5OVVYtaHpnczhMTGowYVJqcFh0dzZfNUstU0xyZTFWTklTYXlTQjAyU0xQVDZxbW5VdjVEcHFXOC1Jb2FjeUhTLUh4ZzNUWTZuNUJVejBXUDZGbHZDb2lfX0ZSNnJfZC0zaWc?oc=5",
-          "time": "4시간 전"
+          "title": "플래닛 랩스 상향, 로열 캐리비안 하향: 주요 우량주 순위 업데이트",
+          "source": "InvestorPlace",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOM2UyZDJiTTdRT0dXR0trd01vMlN6YXdiVDM0QlowX2lNLWh4SkxodlZ6aldGTV9UcnZoOFFxR25iUUFBdmdWS2MyWlJmcGpOcWlVWWM1LUxNNHhFTUxnV1VwNTlRNDg2ZHBkUDdUOHloMFR1LXEyZW9YTEJmeE9OY3hvU252TGd5WlVj?oc=5",
+          "time": "12시간 전"
         }
       ]
     },
     "필수소비재": {
-      "change_percent": -0.02,
+      "change_percent": 0.88,
       "news": [
         {
-          "title": "프록터앤갬블, 필수소비재 부문에서 브랜드와 현금 흐름에 집중",
+          "title": "존슨앤드존슨, 프록터앤드갬블 주가 상승으로 다우지수 134포인트 상승 견인",
+          "source": "Moomoo",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPeGh2anpZUUFBcUxGM3U5MGVLc2VBc2MxR2llOE9XbEU1ZEU3VEhsMnM2dUF0NTR0eHZzS1d0ZmVEOFgtRU9zSWdvaVBSVElwUUEwX1E4cU5UczJEdENtYm5OZzlIU1FqanM1RFVZZEhMZEpUcVdOYm9tVk5GNld4cTZUbDhDdHc5aUlrNllaanR3Zi04WlpfSTNSSDRnNVdX?oc=5",
+          "time": "8시간 전"
+        },
+        {
+          "title": "몬델리즈 인터내셔널 SWOT 분석: 주가, 코코아 가격 변동에 직면",
+          "source": "Investing.com India",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMTludXdtU056aDBYcGZRQmdqQnlMTW9wa21iU0oyR285bEJPVEk4bEFScVFTYktkZGZZTUszNHpqRHZaRU80b3E4dDRxMEg1WU55YjExZXhPZ1NPcTBKMVNYY3pfRElybXFrVFduOUtpcEZKZWh3NWJTeWpsM2gxbmtyUDk0amlyaWVzcnY1X3YzZE9PUFNGV011WnVpVTg3UjJUSzFZMl9FUXRkMUpQMUQ2WmNVUkllRmxIY0NXRWlTNEhkQmZB?oc=5",
+          "time": "6시간 전"
+        },
+        {
+          "title": "필립모리스 인터내셔널, 무연 전략 업데이트... 주가, 장기적 변화에 초점",
           "source": "AD HOC NEWS",
-          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZHQtRHM0MFRTVWxNT083QmlKeXNJQ0pzT0ZSNkhiSHNFX1g5Ri16VmViRnhRNXJhZVFuWXFkV2FmeTlGNTFIVUoxM1BiV1FyT0hnYzJ1c0J5VlpjZV90aVdQM2pqMjM4VEhNak9ETHZoNjM1R2NMQmxzRmdfbGpNekdZanlfV2NNcUNjY1VYakU2SkFFSkNZT3VLbzk3X2VMbmRFYURxSnRobmR3MWVVeHZaZ2dmM3pkRUZGcEJLa282dmFGdDJsdUlTRQ?oc=5",
-          "time": "50분 전"
-        },
-        {
-          "title": "코카콜라 사상 최고치 경신, 펩시는 52주 최고가 대비 16% 하락. 어떤 배당주가 더 나은 선택일까?",
-          "source": "AOL.com",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBfWnhHRi1qaWRlU3Y0dnZMczRadnFxUVlDbUxlOWtPbnRtbXBneGl1UGNpUUVyR29zMTZLQjB1Y3hOLVNldjV3OGp2aE82bHJjQmRoVmQ0eHNRN3RqNS1MRl9UdVhFR3h3VUFzVUlmaVVTclhw?oc=5",
-          "time": "4시간 전"
-        },
-        {
-          "title": "셀시우스: 원브랜드 시대는 끝났지만 월스트리트는 아직 깨닫지 못함",
-          "source": "Seeking Alpha",
-          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxONDNrX3lNY2lmTllDbmZESG1pLVA3Q0VMTDQydUtUYjIxa2RZWTduSkhhNWlQVmVZVVQ1NzdtYzNqZThXNmUtWmllVU9kdTRTZHN3Qy1JcHJLUGV2b0NOVzJ4LUFfNDhQMlRJRmtBekc5bC1tLVBuWFF6ZGJYVFdqOXMxVUtqTEJXWUJJa2djUE9GdG1UZmdNcFJPZjdrWWhDNGtrYUlJX21UVDZGd1R2WGthdG1SRXR6NkhQR3BZSmt4QUxqal82ZTl3cGdjQk0?oc=5",
-          "time": "5시간 전"
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPalEtX2JoWUtOenQ5SG9qaEk3azBUMVlqMTBwX011N1FYTjdxaWplNE9LTExuekdWR3dRT2hlNkJLRW14OHU1Z1Z1N3ljWkh0bTNuLTdGSWl2dUNFN0FwQUpqUlJicTE2MGRleUpFQTdoTTRseDMxOUN2VUlLSWRvNnRwUG5FSW9WQldGS2tfLUlEZXhRaEY0OW5pb1R6Zi1ralQwQm83a3VrbnA5c3ZEb1RVaElzR0J3SF9QcnlXLXpKbU0zVWdDaA?oc=5",
+          "time": "11시간 전"
         }
       ]
     },
     "산업재": {
-      "change_percent": -0.11,
+      "change_percent": -1.82,
       "news": [
         {
-          "title": "Honeywell Automation, 주당 110루피 배당 선언 및 관련 거래 승인 요청",
-          "source": "scanx.trade",
-          "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQX0JWSzZYM2o5TzQzTE1PMnVsOHpuUlVhQzI0Wlp5YVphSDNDdGFpXzNlZW9zNnlXY0FtYUI2NnRZRnlTZ1AyUjlnUTBSQU14VFl3WHUxcmRIZTFWdl9YdnVSNkk1R1ZyaFZ0TGpLcXdibGE0TTJUYm9VVnc4OGxaQUtmdHpDd3RoT3hNZzFFcGhlLWJRM1hRd0ZWTVV6YU1ROGdMYTFJcDJpN1FGbUs5S24wOHFWQ21GY1RmZmhFUFlRWFZMTG93SzdQcVFOcUlTSmJEUzRQWTNhelh0RFE?oc=5",
-          "time": "1시간 전"
+          "title": "지멘스 에너지 하향 조정 후 GE 버노바, 발전 장비 주도 하락",
+          "source": "Seeking Alpha",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTzlZVlJJTk43alRuRjFTYk03b1ZYel9SSGRiX3NjZ3JWZndua0VEQmZzTXhqYVBGeHJtaHU2UWMzWUJsVnZoWG54cUtvbE9lSDBIb2RTaV9WWURzWEVMV3dTOXpKeC1aZ0JqcDdZd1ZUdGlGVFhuMmJsNV9RNHBzcXFwck5zUjZXcXRRek8wUmR5cXEzVF9IS1ZOSi01N1ZCd2tRem9ON1pPZndWYkNvWHk2UHFmZnFqOG1MZzA5bnFLT0E?oc=5",
+          "time": "3시간 전"
         },
         {
-          "title": "Honeywell International, 전략 및 포트폴리오 업데이트",
-          "source": "AD HOC NEWS",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTUlEYjg0TWVrTFNrMGZTQXFWNjJYUDJFVFd2UGpjLU1rWmdLNGgtWFdTMmJJb3pMSVJYNm1YSzAwLXhYVXVEc0RCelRZWFREcHpleWlRYXI2Ym1FdUo2WktzajV4VF84cnVBb2RmZFVYNUlmSkhJXzZFU2NFZmpVeVBvMW9VTEtCa0luZV9vLWQxeXJLUm03dXBBcktEVWJwZ0xVV3UyWXZURGdnank4SGFwRFprUUVxWF9acjJycXI4NC1F?oc=5",
-          "time": "6시간 전"
+          "title": "디어가 대형 농업 약점 및 밸류에이션 위험 재검토로 하락",
+          "source": "Quiver Quantitative",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWHk5UjlGdk1HRlFOZG90U1hYa1FFMlAzaTRHd05PRjNXT2ttLVdjQWpkRHl1cGt4Wk1QSThzc1RjcUFhRnhCblpydlhCQUg2Qm9MM0RFTDFwZ095YmxTLWtsd3BZT1ZXODQ5aE1mMTBBU3RlaWNsdjJDZWEtNDdudUpUZm1sdmtUZU1TZ2xtcURZSWxPd21uLXRWcGhzdVpQUk9sUQ?oc=5",
+          "time": "4시간 전"
         },
         {
-          "title": "Honeywell International (HON), Experion Cognition 출시 후 28% 저평가 가능성",
-          "source": "Yahoo Finance",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNOWMxam9SRE5JaVNuaGpRUjF5R09iNFhMZTZqRGctRUx3Q1luR3RZcjV1aF9uOWl5OFhjRnR1MVV5VmI0VnlhdzN1ZkQwd3NRcV9wOFdoNlVlZGhjVGdYZHc0TlFjMEFCYXhzcFM4Y1Q1UW9PQW5LeDdES2E0R08zOF9QWFgyUUVoZUxGSGxmTFlLSnhiYjBhYUYxNTVpdDV3RUk4?oc=5",
-          "time": "6시간 전"
+          "title": "GE 버노바 주식이 급락하는 이유",
+          "source": "Barron's",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMWhFcGhSWWN3b2V3RDZoaTZSR0tQcFN1NkU0anByeUN1VEdmN0pWbF9la3VXVmFQb0ZUcEY1RnkwMlJMNF9tRU5BcXV0NFQ0VzNDYmRwVG9FYzdfT19QOW4yUDdhWU9FOW5XemJ0RTVNSDVILVdsaDViXzhaZnAxazBB?oc=5",
+          "time": "7시간 전"
         }
       ]
     },
     "소재": {
-      "change_percent": -0.21,
+      "change_percent": -1.11,
       "news": [
         {
-          "title": "CRH, 글로벌 인프라 수요 증가에 건축 자재 리더십 집중",
-          "source": "AD HOC NEWS",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWENReGZUUk9kb1VZWnRnWGZ6NW9sakR4cTdRSV9FMHpCYWRXRW5SZDk2eTNUTHFwNVptb3NaNlp1ZzNvZnBYbnJMV3J6aS1BSG5Zd0lIZVV0V2hTQVRwNzZSMXNhLVJ6X2VMQVRIYmtrcS1VcHRmWm80Tk9vZHZtZlpFSWFIWFVrWk80VXp0TWE5ZVZEWnh4T2lUb3pEYVhUZTFPZnR1NkIzRXQ3MHhtWFpqaTZnSDdSOVozWnFHMF81dGVnVzVFWHdlcWQ?oc=5",
-          "time": "2시간 전"
+          "title": "셔윈-윌리엄스, 8억 6천만 달러 규모 기술 센터 개소, 직원 900명 통합",
+          "source": "The Business Journals",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOR0VPQXMySm5hOXNFWWxpNGNsT3AwZVB5cmJJT2Jlems2QjVrVDFmNnhfN1VaRHBPaWlxU0RGNUd1THRIcjE4My10LTRKdUdYMTVtdnVPT0pkb0hWYm0zZXZKaEFuc05KTkIyLTJUcW8xRDNVWXlSYzBvNF9sSDRjUTlaa3lTMlNjNm5Udm5fVGgwU2JJdW5yeWVla0FMZ0hOSThQb2ZiVXgweE1u?oc=5",
+          "time": "3시간 전"
         },
         {
-          "title": "뉴몬트 주가 상승, 금값 상승 및 기록적인 현금 흐름으로 투자자 신뢰 증진",
+          "title": "뉴몬트, 금값 상승과 기록적인 현금 흐름으로 주가 상승",
           "source": "FXLeaders",
           "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOS1A4NVMtbVRSbDlYYXJidzVDNlp4SFYzTnlPR2l1S3lfVVd6MUo2YW5iTzBPdUR1QkJ5d1JoaXVFUDJBY0E0NmdHRWZxWE1kNG9ORWQyZ2prcURQWVNpV05EMlV2b1VueHFYWE1nci02T2hKMWdsakZJMkl1MnRYMjlleXhoNFdoV0FOLXpzTzQxWDdPanNCb0xMOXp4V0JKREFkU3BQNDhBUGtyMEJ2aVEtbGc4V1dMWWlHeDZuNGVoU3BPZWJYNTE0UQ?oc=5",
-          "time": "5시간 전"
+          "time": "16시간 전"
         },
         {
-          "title": "뉴몬트 EVP, 회사 주식 27만 7천 달러 매도",
+          "title": "뉴몬트 EVP 피터 토스가 회사 주식 27만 7천 달러 상당 매도",
           "source": "Investing.com UK",
           "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPeTJhQ1V0QzBfWkNnVFh3YkJtaVBFNk1NN1ptSHIwYkdKWGdqN05rTm5WU3FuWUs1SHBwdlBGT2QyV3dHV1BCTHlReHFGRmtMX1Q3X2RRZUl2a3ZCaUk1eE5nRno5VE9CTkVQY0JkMWsyNzgtT1gxVmR4RWVSRjNmdFpDX1BZVjdrcy1uRDNnTkwwaFdqWjVIdHQ3QzRwdV9JQ2dfdnNrcFo3bFJLVERKTDhCVEwtYUMtZEQyYjNJcTc?oc=5",
-          "time": "10시간 전"
+          "time": "21시간 전"
         },
         {
           "title": "솔스티스 CEO, 주가 15% 급락 후 145억 달러 인수 방어",
           "source": "CNBC",
           "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPN25RYWhGYWpGZDM1dTVqaXpkYXBZLXlYS1lXN2R2b1d4NXpDX1YzdXBjeHNxZ2x0aWN1MDhnUlNsRGdJWHhUYTJXY0QyNE5tVXFrZXBHb09pTkVET1FwbFF2SnZBRko0RDdBRDVEc2l2dXdlMkZHbU1kdld2ZnctclRLZ082dzRLQ0k5eFJ5cHpvNEI0Z0tqQTRfMHdMUUwzV21Z0gGoAUFVX3lxTE1XYkMwblJCNEJZSXJvVDJpc3VrREl4SDh3azh4R2dUckk3MUtWYlZHUGlEVmtBYzFqaEp1eC1mVzhvWXNiQjNyaGc5LW1hUW1fTDd5QW9SM1J2eFdTak1CTC11RC1ta0dzbTdobEZ0Nk1OTTdxQXAxWVN5ZnBoMlF3TTczNXYtSGVPOGY5cjlxajhYZ2hVdU5Pbk5yOGNMQ19QWDJpb1Zfbw?oc=5",
-          "time": "11시간 전"
+          "time": "23시간 전"
         }
       ]
     },
     "에너지": {
-      "change_percent": -0.21,
+      "change_percent": 2.63,
       "news": [
         {
-          "title": "Barclays, ConocoPhillips(COP.US)에 '매수' 등급 유지, 목표가 155달러",
-          "source": "Moomoo",
-          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRWg5bk9Ua1NmTUdfMS13aklZQlRRZDZhUXFSTzdtaFRXN2JndTBvNW1VN2tsa2R4dEFEa1dqakFsRGJmQmJTa0szYmZDbGJ2dVMzemRvaUwxanV4TTJqVURMWjRyNU1LemR3Ung4MDNDTm9jUGhnRWE4a0Fhb0FDT0hwNnEwdjk1eHl2eV9EMEN1WlA3eUdHa2R4a09QZGlmRVhNM0Q1VFlWa05nZUVlY2RXNGZQeE8wRE9FMw?oc=5",
-          "time": "12분 전"
-        },
-        {
-          "title": "Mizuho, ConocoPhillips 목표가 150달러에서 146달러로 하향 조정",
-          "source": "marketscreener.com",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeUFJSkUzNWtjelhCZjdacUx4dkJGTEV4WVM1aERvYXIwbVpUemlTQm8wdUctLXB5QmNQbnVFT0s5TzFEWEdhcEx1ZzZ4dWo2cmZfVmFRMUZLV1BIZFBVNTNqWVpfRWk4czZPR1p6WjdYWWlwZVlDRkxscHZLdXhkUEFDQ0xKcFNEU2dSa3ZwTHRkdVNJX0FEN1VGcGhLMHFDa2ZMa3huczR0dTVONnNCMk1lY2M?oc=5",
-          "time": "1시간 전"
-        },
-        {
-          "title": "EOG Resources(EOG), 202X년까지 85억 달러 잉여 현금 흐름 목표",
+          "title": "EOG Resources 주가 4.0% 급등, GF 점수 66은 투자자에게 무엇을 말하는가",
           "source": "GuruFocus",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVmt3MUFxYUpkSzRRTXVyZWt0VERpMlN6NnV3TTk4M0ZqOG5QR2FLZ05nSXlfOV9OWUdkZGZvdUZ5aE9UMDMtc0I4dDJYMUxNUHpUclVJRkxvQ0RXV1lHNWdJVnJ4T1VXRjBMazRicGFHMUotMHlhNG9QZlAwZ3VOQVJDeGlMd3g1dzgxSThfZXZmVm9kalNNVGdGaVk3SDdXeFF3?oc=5",
-          "time": "12시간 전"
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPd3MtczNVYkdWX0R4Vjd1ZkdhV1Z1eG1mbnZCWW5EbW54eHhEV1l5Y0htM0JmbkpJSVl1LUZmMEJqelVPMXRTZE45cXBUdHR6THhVSnRWRzFxYlZGTDFDUEYwM3VrRmk3dXpvY29ZNUxMS0hwaDdNM2pzLUtWREN1bHIwdjZGNGJ1U0p5VExwOEU4RWhYVUYtTzZkX1UyNHk1WUZsSFhkWkFVN3RTZGFzaHl3?oc=5",
+          "time": "9분 전"
         },
         {
-          "title": "독일, 에너지 안보 강화를 위한 비상 가스 비축 계획 - 로이터",
+          "title": "4.7% 상승 후 ConocoPhillips (COP) 매수하기엔 너무 늦었나? GF 가치는 저평가라고 말한다",
+          "source": "GuruFocus",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOV0tVZWtsNVg3QXRlNVVaaUF1SVF0Njg1NzZLQm1WUHI4YXE5MUh1RWVETm9TWDVuaXdacXBZRTRib1ljT1JocnM4N1JSSEVMaEs5VlBqMWNRMjlNNmY0SFF3bWpycDhfVG9ubElRcmp4dURRaF9Qb1IxVktFXzc2ckdtZHhVWmpySVpBQnFQSjJILXZBY1I1elF1S3FjSGdlb3J1LS1RRkFXYlZaaTQyVTNYTjlhS0RtOGhQag?oc=5",
+          "time": "29분 전"
+        },
+        {
+          "title": "Exxon Mobil Corp 주식 (XOM) 7월 7일 3.25% 상승: 주요 동인 공개",
+          "source": "TradingKey",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZDlZN3FnalpPQkpDaXRkWmNkbHl4WjFRelZ0eDk1YlE4VW9vRktKa194MXhyVzhTT2hEVjVPVURnbzU5STJlbmFsaU80QXFTeV9zQmdrN3RCYmw4UEdMTzRpVXhXTV95UTJNLWRLSk92MVljaS1VYWI0dGdZWDNmdDRwSUdPTlBERXc?oc=5",
+          "time": "6시간 전"
+        },
+        {
+          "title": "빅테크 데이터센터, 미국 러스트벨트 공장 전기료 인상 주도 - 로이터",
           "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYVBMbjA0T3BfSUZHLUoycHMtRzhxTUNDYWZtSV9teGZyMFBJeUxrWFZpdmx5Rnl1MGlSdDNyYVYxZmpjQ1E0YzdFTno5RzVsc25WQ2J2VDgwdXI3YThYT2xZV01VblN5Z2FWZWhrcEVDVmVNVHhDdlhrNWNFazRBbjk4ZjNfYUFjXzhWMjhXLUFqaFZIQjJIUWhQaHFjMmZrLUh2QXE3QTBnUjUxTHVEYy1JSQ?oc=5",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNSGJ2UXRHVGctUTJ6VTJfbGV6djVUaUZFZjVONlZPZ0EyY01XZFh6dFdRRGxDQnRzSnF6UG1mOXBNR2k5eTBXeEtyV1VIdzdlUjk4N1lrTFVqdFRFRjNBMHNsMmFRWmpxX2I5dzdQMlZnZmsteUU0bGZXMFNRM29Vb2JGeFRScWw5S3ZPZlV3ZTA0dkdxTTI4a05waTR1ZU9aZVVCcWV5bVVfOUFtMUxQRzJ4aVQyQWV5MEFaODlrUjFSWXpDVGE5dQ?oc=5",
           "time": "3시간 전"
         },
         {
-          "title": "쉘, 2분기 가스 생산량 전망 상향 조정 및 가스 거래 실적 개선 전망 - 로이터",
+          "title": "독일, 에너지 안보 강화 위해 비상 가스 비축 계획 - 로이터",
           "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUWhxVm5yTVNERTRHWUxOcm9ScW1qeEZHR0t6VXNaT0JqMmtzNlVYcTR6SGZIVVNuNTJJbW9hM3R5aG9pVUpBa2dFdUVXeTdReU9rMGhiSDZYUmFxQjQ5S3pMNmF5dUdxcnlyMF9qa0dyejg4VFJxN2FYWHlRNUxJV0h3OWhyQWo4T3dQNzFZcFd5YmlxTTEyUkVlbkhOcE1oY0VPUWRxeVN2NzdqMVExbA?oc=5",
-          "time": "4시간 전"
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYVBMbjA0T3BfSUZHLUoycHMtRzhxTUNDYWZtSV9teGZyMFBJeUxrWFZpdmx5Rnl1MGlSdDNyYVYxZmpjQ1E0YzdFTno5RzVsc25WQ2J2VDgwdXI3YThYT2xZV01VblN5Z2FWZWhrcEVDVmVNVHhDdlhrNWNFazRBbjk4ZjNfYUFjXzhWMjhXLUFqaFZIQjJIUWhQaHFjMmZrLUh2QXE3QTBnUjUxTHVEYy1JSQ?oc=5",
+          "time": "18시간 전"
         }
       ]
     },
     "유틸리티": {
-      "change_percent": -0.29,
+      "change_percent": 0.59,
       "news": [
         {
-          "title": "Jefferies, Xcel Energy 목표 주가 101달러로 상향 조정",
-          "source": "Investing.com Canada",
-          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTVpzTTBHaGJrVW5oRmtkWV9oUEpSZUN6RkVRUzMtcmwxcmVnSmQ5dlNJSklBbjVJbzZiMEwwNldSaHJ0blVpdnNhb2pSZGRVY3ltV0UyY2txRWtzNXUyWjhtTjJEQmlONS1uenpyVWRDMUlLT08zeFJoYjB5QkZZY3NjVGIyM3gxN201LW9vbWlEUWJNZUtnR3JmeGFEYURpRnk1elRCTHRXU2JsaS0xWnpJVnE4aHFlWkdKYmVCMFlRVG40QUJIRjdLYw?oc=5",
-          "time": "1시간 전"
-        },
-        {
-          "title": "Sempra, 장기 에너지 수요 추적하는 투자자들에게 미국 유틸리티 포트폴리오 강조",
-          "source": "AD HOC NEWS",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNOS1vLTRydGZMX282NHZIRkE3d01pVWdQbU1NaEd4V0FxSDBDZWZKZ0VVMTRubWtOM0J4RUpSemw3TDZZYXFaMEo4dEtEZkZEWjZlci1KRkhzcEtxbmJHMzllYU1rTTNxRktJV3lRRkJGMmFBdFpPM19KTXNZT0RLME0wUnRRTHBGQUNZZ0ZINGxRb0lWcEotQkpzUjZ2OTRrRzhUS0lXUU5FcUZ1OUxSeXJnY2VVaFlILVBZV3VWYlZzVURtbElfeEZHR2k?oc=5",
+          "title": "GE Vernova 주식, 7월 7일 8.96% 하락: 주요 동인 공개",
+          "source": "TradingKey",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPVUkyN0JHczdzZEl1czRGNDVBR0JBMVdENHYzVEgxa1hCYXBnYmsyNUtHTlRSZnRvOGFvLXp6YThISll5ZFEteU9YX09lREhabDFjbVpkNHZNMmFaMFpyMS1KR19jWmFZMXRYc2FPTU9UVkZHOTgxSlNRTjBYc1JpTmk2ZnJjRmJuaVE?oc=5",
           "time": "4시간 전"
         },
         {
-          "title": "Southern Co.(SO) 주가 하락, 시장 상승세 속 주목할 점",
-          "source": "Yahoo Finance",
-          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMlphR3FJU3VCV1p4Q1p1VkJNYnZ5TmVjcGRrZC1WcF8zSm1EMlNhYllMQ0JsMUhTMnZKVGxseDZISEZveDhEeWtBTkpIUzVrdUcwcGl6cjBlZ0NHWGxVNkhqb0twdERhZF91dzZsMFN6MnJIV21NLVdiUGpBeGg4ZzdPSWM1Um9xSDh2Nk9GSnZZcHprT0ZUTExLZw?oc=5",
-          "time": "12시간 전"
+          "title": "Duke Energy, 2026년 2분기 실적 발표일 8월 4일로 예정",
+          "source": "Stock Titan",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMTNpaURrRXBOMVlUaWN4RXZKTWw2UnhUTHRPQmRzSW1kYVNBVWNMYzF3aWtJUTRtYXY1SG5ETnZYSmNFRnFWQVFVckhJRW9BdG5acjBCZDV1WENnV3l5Y21jNXFXc1BMS2NucFJzZmJpQUVoWXNpcjN2TE11czdjbW9pNDRnSGRUT05wT2NUYlVvamlaODVnd3p6TTVKQzZUVWFXdVlWZjd0QlJMclBvOU9Iak4zMXVqM1pyb09GWQ?oc=5",
+          "time": "8시간 전"
+        },
+        {
+          "title": "상원의원, FERC에 NextEra의 Dominion 인수 차단 요구: 쟁점은?",
+          "source": "TIKR.com",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOLUx5czdTY0xFM2JBUVZsYTZicVlDczk5dVdyQ0U4S3VRbnpTdVZfR2ZMZ09DUGlZM0pxbjBMRWlQTnNMZmthUU04cXQxOTVGTElNQUljS180VHQ4Y29MTnhNM3E5dl9YMEtwMXZDRVVrblZXM2lpNUtCS18wMmtOZmlWQV9sY2RFUTM4RTdsLURiTjZoQndRMGZhQjhQZGI4?oc=5",
+          "time": "8시간 전"
+        },
+        {
+          "title": "유틸리티 섹터 투자 전망",
+          "source": "Investing.com 한국어",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9OTnlIQUlPZ1NneGlVTURPVFlkWjZwMkxieE5rbGNnLThXWmFGOHYzdXJQVG1tY3o1UXdONEhhOEREY2F1QjZWYVlybjVuN2J2Ym5hOXM1RHBiSWpXcEFjV0w4cTVadw?oc=5",
+          "time": "19시간 전"
         }
       ]
     },
     "부동산": {
-      "change_percent": -0.14,
+      "change_percent": 1.22,
       "news": [
         {
-          "title": "Ventas, 고령자 주택 및 헬스케어 부동산에 집중",
-          "source": "AD HOC NEWS",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQajgtS3ltNElrV0xMaHhVWjRVVWdabWJyZUo1a0Rvazd6OFA1cHlNNFR2TE5FcVE2OVVGRkdGRTZDXzVlQlZNYk9BdW9YZ3I3anFsUFlyNVFzNG9UaVAwdC02bWdoYjVPUURtSlNYTlp5NW1LZU9jaUU3ekZ4RU1kU2QtUTBaS0NuRHdDbFRqcjB6Q08xMld3d1Zja0U2SkJlbk90c3FCTnJrUjdxRUZiQ2VPa3k1N29RUWMxN2FfQmtZdw?oc=5",
-          "time": "17분 전"
+          "title": "CBRE Group, Inc. 주식을 Y Intercept Hong Kong Ltd가 매입",
+          "source": "MarketBeat",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMnFSdnRNVjY5UldQdmhjdllUZ0dTSWktWGNHeVZkV1NMWjhWbnYxQV9hYXFBLXhrQXpXekJzOHFHOGVVTnY2ODhDZS1pbllDQnpOd3VIZjNEX3hrdi1xa1Mtb0hQaGxSQ0dFYnhPVlF0em1NX0h4WE5LSy1aU1luUWI3UTBQY0ZvQTl3SXI4WjZkV3NIb0wwRnE4a1VWck9GUmlQdGt1Y3lDTWxKRFFMLTlLV0o2aXRpZk9OTzZNWWp1N0Na?oc=5",
+          "time": "5시간 전"
         },
         {
-          "title": "Barclays, Ventas 주식에 Equalweight 등급 부여",
+          "title": "Prologis, Inc. 주식을 Swedbank AB가 매도",
+          "source": "MarketBeat",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWl9XVFNLVUlpeGg5RS1CZmRZUEZwSEx0cnJ5eFMzS05OY0hNbklaUWRtSG16dGtPNjlzMkVFeUI3YnVPVFI4eVo5VW5SM3dQeGFQcDFsbHUwZ3NXX1MtbkpGTVVyczUzZ3g0OTFmSWJKMFo2WjdEYnBaYmI3LUZidXBFWEthbHpUSmxqUlAtMFZxUGJ4LTJ4U3MzVVBuOEtFLXdDaFpjNA?oc=5",
+          "time": "6시간 전"
+        },
+        {
+          "title": "Barclays, Welltower 주식 보도 개시, Equalweight 등급 부여",
           "source": "Investing.com",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTkJKclFfdmIzSnYzSU5wY1lNSW14X3lMMEFKZF9welh3bkxvVEdXbXhWdE5pakI2TWVWb1hLMXF1c3VNWjFwSHoxUVZndERvUG5EVnNVV3c4clhzRVVFanRjR3VZa0lMSDBGLUtPeklnMG8ySTVQTC1uUlFHYWlnaHFYck5TNnQ4YnhQMW14VHJrUGw3ZTZaMFppUzFWSXNYbzYxX0F5OU9MMEdadVVxWWtTZTRPMGxVOF95OERLTS1IaHhfLW9NY1ZORXo?oc=5",
-          "time": "1시간 전"
-        },
-        {
-          "title": "Equinix 주식, 매도 압력 및 과매도 지표 후 주요 지지선 근처에서 안정세 유지",
-          "source": "Traders Union",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQS0V3N2FCWC1zaEQyRjA0ZFcxcGt2X04zVWljR1hTZ1BNMjl2U19QOWRiYjBlTmxEYktDUEFjcmJzZkJva2k3bnRXWFVBRzd6RmpFY1dpd3RKYWdZSVd6ZWcycnpReS11blhFQ0FUVF9oTzBBLVdFU2g2bHZHZTZqUVZud3Jnd1M2WUt6elVyTGRmMFhxVlE?oc=5",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaWhNTnpXcWJwbDlMMFRRcVdNTEplMkZQQ3E1RnBDYUdBSU5IVzhpZVI3eXRJaDZkZ3pmaFRHNGQxMFFfU3cwTEpWV0dieG5XY0V4eUJ2MjM1OURUaHNacWI2amZRME9MNWN3dzdlYl9OR1lDR3ZxOHBodXBMalJRS2xueVhIcURjb0o4Z0h1UVhHRFpoNFM2MFBYdHNGcWV6dGtneUtqMTZkcUs3dTRmR19sOFFpVnBJdzVoWlpGel9IUFpnUkE?oc=5",
           "time": "12시간 전"
         },
         {
-          "title": "부동산 투자, 2024년 전망은?",
-          "source": "Investing.com 한국어",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1DZ0xKNlFpbS00UFpHS3dKaFZOMGs4YkpwQ0lqYzdGaTQ1TVBDQVM3RmZfWkVWbmRTMEpJVVptUzNYUjZhOEZGVWh4dmFXQmJZSVVRc2c2dTR5ODJGMnVDSmpNMlI?oc=5",
-          "time": "6시간 전"
+          "title": "CNBC 주택 시장 조사: 더 많은 부동산 중개인이 균형 잡힌 시장을 보고 있음",
+          "source": "CNBC",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcUF0ajJnQlVPMm9fWlpDUk5NSlhpaTYxQy03Z3N2aFlBRXZidHpySklrRmRXMXZsMGNFR0dGUXBfYlZDenhwd1BvMFh4NmM1ZXFFakdOWmpfdHNUYk1tUzl5VWU2UGF0anR5dVV3b2dQLWNfa1ZmcVlMMkJLWW5Id3VmSFFzZ9IBiwFBVV95cUxNeFpOenhZdjBHc2dsN0VoTmVUOFRMaWdQUDdPN19qMUZ4NUw2bVRLQXMzaVpBdEk4SmhYc1ZUbXZuSW5WbDhaNHV5QXJwaXgtVi1kWVpLcXNNR3ZGTVFuMVZRSnZWZWRWeWF4dXBRek1saGVQQWY0UzFnTjNyQVZHUkRaalVkUDhvSkRv?oc=5",
+          "time": "11시간 전"
         }
       ]
     },
     "커뮤니케이션서비스": {
-      "change_percent": -0.29,
+      "change_percent": 0.45,
       "news": [
         {
-          "title": "라이브 네이션 주가, 티켓 번들 프로모션 및 여름 라인업 발표로 1.77% 하락",
-          "source": "Traders Union",
-          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWWNZaWIybmhBcnBhSkltMXc0QV9KTHc3bWhvX0NsbGdodVJyZjJoN2J5YWFTZVRXR0Fpa2dEX1FxbG5mN3hZRmpmQnUwamRmRjhxZFVPREQ5X3FjN21SX1FaZnpiNGtRV2VDcGhQQ3pFdDZzaWlkNlhDRVcxZ3hGZi13Q2pCOXFDbTJFTXhrVHJOX2JO?oc=5",
-          "time": "6시간 전"
-        },
-        {
-          "title": "조사할 만한 서비스 주식 2개와 어려움을 겪는 주식 1개",
-          "source": "The Globe and Mail",
-          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPM0F1R1lGY0J2bjFNeDF6anFEWG9MSVRaNUd0dVdHODdWeUdIUUdoT0QzNlcyTTM5MUY5aVVpREs0RGhBaGRIeUIxUGVhNmZFblZkaFhRMlBZZU1DenowZFRkRk5tZTFoUk91OTdWMGEzSFZtRDhWU1diMTdTVTBfSURpTHRKb01ZcURULWdjNk9UeXlIY2xqelRMeXdmT2M5U2RCNHZDSnl6NnJYTGo0bnd6RF81Q3Z5RHpHNllQN1dtOTB4al9sLWJRbkcyQWkwSTRNOU9zdHVySFVX?oc=5",
-          "time": "6시간 전"
-        },
-        {
-          "title": "라이브 네이션 주가, 세인트루이스 콘서트 프로모션과 모멘텀 둔화 겹치며 1.77% 하락",
-          "source": "Traders Union",
-          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUHJ2UnI3bVEzcElYR0J0X2NHQXRMYTMtRXR2SHJKTnVoVkpLaWtXWjNhVXRrOEFvYmdBX0M1WXl5UFpZRlBjQlVSb3FXZi1VYTRLWWV1WVNqdFFMVWlJUVdkOEhwQWw0YUJ2N3AzaHBoV052eldaV0VtOVVpdUZPQWVVNnBRazZ4S2xBZHU1LU5qZHBB?oc=5",
-          "time": "9시간 전"
-        },
-        {
-          "title": "Anaergia Australia, 호주 Goodness Grown 시설에 첨단 혐기성 소화 기술 공급",
-          "source": "Financial Times",
-          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPODBQUm0zeVVSZHFMajRPMEZNSDVfM3lyaTZoa25kR0xVcUdmRlY0RkdIUExqclhodWJCbjJqN01JQlZxbzFBRmdKTEhOd3pnNVB0NDhlaEFvSDVDd2NDUWJxRHdoX2lMSldjVGQyeUxJc3NuQ2hRS0tmQjVNRXpLU003OWlLdHh6eWVfczZzd1J1clRwYmNXYWhEbFlfVGg5Q0J2TmR3?oc=5",
+          "title": "T-Mobile, Chris Sambar 영입 및 리더십 팀 개편",
+          "source": "Stock Titan",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbVFsaWxRenM5RjFGVmRLeXhmekNmLVdyZW9KM2lNbk9pZGVvSGxuUVpwbGdqNEw5UWR5X2JTeV9zUm1neEVsVUpyemxJQnVnZjI1dzNsUVdwVUloc1JsUHVQWHZBTGdHU0FtYUJXUXRHaE1iNHRtY2xkOHhUd19hdGFIWG9JYnpSX2NHLVI5d09KZnNhU1BzaUc1ZkdNbjkyTDZoVVhhZw?oc=5",
           "time": "1시간 전"
         },
         {
-          "title": "일본 기업, 중국의 희토류 공급 제한에 대한 경고 강화",
+          "title": "T-Mobile US 주가 3.33% 상승 (7월 7일): 상승 요인 분석",
+          "source": "TradingKey",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNeC1ncmhJWXhXNWY2NlNyQTZNVFJBOWRjVm9QMmZRVU1leDA5OXNwR1doQjFXeVVQSEo1ckpBQmtPcXFvRks1RXB4MkhlQUd1LUlCd0F3dWItZGRkOTJqX0pYZUNNMURId1FVOFpYWGRuanA2QVhPeExrU05Xd2dMXzJWVDRvYUpNSTZZ?oc=5",
+          "time": "3시간 전"
+        },
+        {
+          "title": "T-Mobile US, 레거시 플랜 마이그레이션으로 수익 성장과 고객 이탈 위험 균형",
+          "source": "Yahoo Finance",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQeHBFYzZYRGFCRVFJOTh2M1ZlUTgza0hqdDdNZWZyRHdjMU5rMGFXc0JlSW1yZWg0dERvS3NoNkl5UVpLQUxNdGdpM2N5R19kdzVvc2RZSUFDUGpuQzUtNERvdWZmdVNLU0hmNHNtcWVJX1RCajZIMGwyaHR2OTdWcGJnNmQ4U0xyT2VCWmhaejJ6dw?oc=5",
+          "time": "4시간 전"
+        },
+        {
+          "title": "AI 법률 스타트업 Norm, 12억 달러 펀딩 라운드에서 기업 가치 인정받아",
+          "source": "Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWFkxYzc4RVJGX2hJdERZd0pWWVRGenZGYUhnSWwwbGJaM3d4YlpoSGtrMG1Xc1V6bVl3cWZiN2NkYzFHQllUY1NTR2Q4enh6dFVKeEFMWHhodGNranVrOUYwR3FIdWpwUHkwZFZFZk9HRm1OVmFsZm4zcWdXcGR0djJUQjBCWUQ3ekp1WXI5RzZkTTEwZEVDdm1FMVZDOVdJU2pRUGdVTnlnVUZ1VzV2NA?oc=5",
+          "time": "10시간 전"
+        },
+        {
+          "title": "중국 희토류 공급 제한에 일본 기업 경고 수위 높아져",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObmNxbFlBOWJuUjBGZTQ4UGhqMENYZDdmZGYtcURfVG1qWkVQcUJ0c3JfNHpqNi1pM1F1dDVUMEYzdE1JOWI1WGZZMnF3eVNtampuZ0g1VTlOY1p6WDJNRmFoS21wUDhGb1hSbml2ZUdRb1pqXzZGdGFCd01XTm1jNXBHWFRYLU9oSHlJWW0tSDdoZlR4cmk4MFV2QThqZGdjUFh6SjcwY1ViZXNzbEx4WTNqZUY0S2tiZWtQc3Fn?oc=5",
-          "time": "11시간 전"
+          "time": "22시간 전"
         }
       ]
     }
